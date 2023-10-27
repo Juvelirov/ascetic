@@ -3,6 +3,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .forms import SignUpForm, ClassForm
+from .models import Class, Person
 
 
 def registration(request):
@@ -16,7 +17,7 @@ def registration(request):
             user.save()
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('class')
             return redirect('login')
     else:
         form = SignUpForm()
@@ -44,7 +45,11 @@ def class_autorize(request):
     if request.method == 'POST':
         form = ClassForm(request.POST)
         if form.is_valid():
-            form.save()
+            name = form.cleaned_data['name']
+            bio = form.cleaned_data['bio']
+            school_class = Class.objects.create(name=name, bio=bio)
+            school_class.save()
+            Person.objects.update(school_class=school_class)
             return redirect('home')
     else:
         form = ClassForm()

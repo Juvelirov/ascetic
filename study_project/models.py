@@ -15,8 +15,8 @@ class Class(models.Model):
 
 
 class Person(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    school_class = models.OneToOneField(Class, on_delete=models.CASCADE, null=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    school_class = models.ForeignKey(Class, on_delete=models.CASCADE, null=True)
     username = models.CharField(max_length=50, blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
     surname = models.CharField(max_length=50, blank=True, null=True)
@@ -26,7 +26,7 @@ class Person(models.Model):
     image = models.ImageField(blank=True, null=True, upload_to='profile_img', default='profile_img/deafult.jpg')
     created = models.DateTimeField(auto_now_add=True)
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'username'
 
     def __str__(self):
         return str(self.username)

@@ -15,12 +15,4 @@ def create_profile(sender, instance, created, **kwargs):
                               password2=user.password)
 
 
-@receiver(post_save, sender=Class)
-def create_class(sender, instance, created, **kwargs):
-    if created:
-        my_class = instance
-        Person.objects.create(school_class=my_class)
-
-
 post_save.connect(create_profile, sender=User)
-post_save.connect(create_class, sender=Class)
