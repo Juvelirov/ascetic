@@ -1,5 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
+from django.conf import settings
 
 
 class Class(models.Model):
@@ -15,7 +16,7 @@ class Class(models.Model):
 
 
 class Person(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     school_class = models.ForeignKey(Class, on_delete=models.CASCADE, null=True)
     username = models.CharField(max_length=50, blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
@@ -33,6 +34,4 @@ class Person(models.Model):
 
     class Meta:
         ordering = ['created']
-
-
 

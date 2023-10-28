@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
 from .forms import SignUpForm, ClassForm
 from .models import Class, Person
@@ -14,6 +14,10 @@ def registration(request):
             password = form.cleaned_data['password1']
             email = form.cleaned_data['email']
             user = User.objects.create_user(username=username, password=password, email=email)
+            groups = form.cleaned_data['group']
+            for group_name in groups:
+                group = Group.objects.get(name=group_name)
+                group.user_set.add(user)
             user.save()
             if user is not None:
                 login(request, user)
