@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required
-from .forms import SignUpForm, ClassForm
+from .forms import SignUpForm, ClassForm, PersonForm
 from .models import Class, Person
 
 
@@ -21,7 +21,7 @@ def registration(request):
             user.save()
             if user is not None:
                 login(request, user)
-                return redirect('class')
+                return redirect('edit_profile')
             return redirect('login')
     else:
         form = SignUpForm()
@@ -42,6 +42,18 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('login')
+
+
+@login_required(login_url='login')
+def edit_profile(request):
+    if request.method == 'POST':
+        form = PersonForm(request.POST, request.FILES, instance=request.user.person)
+        if form.is_valid():
+            form.save()
+            return redirect('class')
+    else:
+        form = PersonForm(instance=request.user.person)
+    return render(request, 'edit_profile.html', {'form': form})
 
 
 @login_required(login_url='login')
