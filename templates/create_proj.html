@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post"> <!-- создаем форму -->
+        {% csrf_token %} <!-- защита от CSRF-атак -->
+        {{ form.as_p }} <!-- выводим поля формы в виде параграфов -->
+        <input type="submit" value="Save"> <!-- кнопка для сохранения изменений -->
+    </form>
+</body>
+</html>
