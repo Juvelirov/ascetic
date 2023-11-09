@@ -34,8 +34,12 @@ def user_login(request):
         password = request.POST['password1']
         user = authenticate(request, username=username, password=password)
         if user is not None:
-            login(request, user)
-            return redirect('class')
+            if Person.objects.filter(school_class__isnull=True):
+                login(request, user)
+                return redirect('class')
+            else:
+                login(request, user)
+                return redirect('home')
     return render(request, 'login.html')
 
 
