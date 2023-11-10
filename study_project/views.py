@@ -39,7 +39,7 @@ def user_login(request):
                 return redirect('class')
             else:
                 login(request, user)
-                return redirect('home')
+                return redirect('home', request.user.person.school_class.id)
     return render(request, 'login.html')
 
 
@@ -71,12 +71,12 @@ def class_create(request):
                 school_class = Class.objects.create(name=name, bio=bio)
                 school_class.save()
                 Person.objects.update(school_class=school_class)
-                return redirect('home')
+                return redirect('home', request.user.person.school_class.id)
             else:
                 school_class = Class.objects.get(name=name)
                 school_class.save()
                 Person.objects.update(school_class=school_class)
-                return redirect('home')
+                return redirect('home', request.user.person.school_class.id)
     else:
         form = ClassForm()
     return render(request, 'school_class.html', {'form': form})
