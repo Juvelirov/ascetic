@@ -35,3 +35,8 @@ def class_projects(request, pk):
     projects = Project.objects.filter(school_class=school_class)
     return render(request, 'home.html', {'projects': projects, 'class': school_class})
 
+
+def single_project(request, pk):
+    school_project = Project.objects.get(id=pk)
+    return render(request, 'single_proj.html', {'project': school_project})
+
