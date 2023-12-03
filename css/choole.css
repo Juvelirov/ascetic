@@ -1,0 +1,256 @@
+.header{
+    width: 1920px;
+}
+
+.header-logo {
+    display: flex;
+    width: 122px;
+    height: 122px;
+    left: 120px;
+    top: 30px;
+    background: #FFFFFF;  
+    margin-left:120px;  
+}
+.logo{
+    width: 263px;
+    height: 37px;
+    margin-top: 43px;
+    margin-left: 20px;
+    margin-right: 445px;
+}
+
+.nav-list{
+    display: flex;
+     flex-wrap: wrap;
+     margin-right: 40px;
+     list-style: none;
+     max-width: 990px;
+     position: absolute;
+    list-style-type: none;
+    margin-top: 55px;
+    margin-right: 20px;
+   }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 20px;  
+    color: #000000;
+}
+li {
+    display: inline;
+    padding: 0 30px;
+    margin-right: 20px;
+}
+
+.nav-ite{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 49px;
+    background: #1DB7AE;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.btn-text {
+    padding: 11px;
+    text-align: center;
+    top: 3px;
+    font-family: 'crewniverse-medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-list{
+    margin-right: auto;
+}
+
+.border {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 182px;
+    border: 2px solid #7B4628;
+}
+
+
+.invite-school { 
+    width: 1920px;
+    height: 1080px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/childrenn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 55px;
+}
+
+.invite-school-btn { 
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 150px;
+}
+
+.btn-text-invite-school{
+        width: 567px;
+        height: 110px;
+        background: #1DB7AE;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* добавлено для центрирования текста */
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+}
+
+h1{
+width: 932px;    
+font-size: 64px;
+word-wrap: break-word
+}
+
+.texttt{
+    margin-bottom: 170px;
+    color: white;
+}
+
+@media (max-width: 768px) {    
+    .header-logo {
+        display: flex;
+        width: 122px;
+        height: 122px;
+        background: #FFFFFF;  
+        margin-left:0;  
+    }
+    .logo{
+        width: 263px;
+        height: 37px;
+        margin-top: 43px;
+        margin-left: 0;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        list-style: none;
+        list-style-type: none;
+        margin-top: 55px;
+        margin-right: 20px;
+       }
+    
+      .nav-link {
+        text-decoration: none;
+        font-size: 20px;  
+        color: #000000;
+    }
+    li {
+        padding: 0 30px;
+        margin-right: 20px;
+    }
+    
+    .nav-ite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 263px;
+        height: 49px;
+        background: #1DB7AE;
+        border-radius: 30px;
+        margin-top: -10px;
+    }
+    
+    .btn-text {
+        padding: 11px;
+        text-align: center;
+        top: 3px;
+        font-family: 'crewniverse-medium', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+
+    
+    .border {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 182px;
+        border: 2px solid #7B4628;
+    }
+    
+    
+    .invite-school-btn { 
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+    
+    .btn-text-invite-school{
+            width: 520px;
+            height: 110px;
+            background: #1DB7AE;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* добавлено для центрирования текста */
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+    }
+    
+    h1{
+    width: 550px;    
+    font-size: 55px;
+    word-wrap: break-word
+    }
+    
+    .texttt{
+        margin-bottom: 170px;
+        color: white;
+    }
+
+    .header-logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px; /* изменяем отступ слева */
+      }
+      .logo {
+        width: 150px; /* уменьшаем ширину логотипа */
+        height: auto; /* автоматически высчитываем высоту */
+        margin-top: 20px; /* уменьшаем отступ сверху */
+        margin-right: 0; /* убираем отступ справа */
+      }
+      .nav-list {
+        position: static; /* убираем абсолютное позиционирование */
+        margin-top: 10px; /* уменьшаем отступ сверху */
+        margin-right: 0; /* убираем отступ справа */
+        width: 100%; /* занимаем всю ширину экрана */
+      }
+      li {
+        display: block; /* меняем на блочное отображение */
+        margin: 10px 0; /* добавляем отступы сверху и снизу */
+        padding: 0 5px; /* убираем внутренние отступы */
+        text-align: left; /* выравниваем по центру */
+      }
+      .header-line{
+        display: block;
+      }
+    }
+    
