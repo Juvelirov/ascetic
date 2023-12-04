@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed-Post</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <img src="img/logo.svg" alt="logo">
+                    <img class="logo" src="img/smartBear.svg" alt="logo">
+                <div class="nav-line">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой класс</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой профиль</a>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+
+    <form action="/submit_info" method="post" enctype="multipart/form-data">
+        <div>
+            <img src="url_изображения_пользователя" alt="аватар пользователя">
+            <label for="new_info">Что у вас нового?</label>
+        </div>   
+        <div class="post_text">
+          <textarea id="new_info" name="new_info"></textarea>
+        </div>
+        <!-- Сделать обработчик клика в JS -->
+        <div class="btn-img-video-choose">
+          <input type="file" id="file-input" accept="image/*, video/*" style="display: none;">
+          <button id="choose-img-video-btn"><img src="#" alt="картинка фото.видео"> Фото/видео</button>
+        </div>
+        <!-- Сделать обработчик клика в JS  -->
+        <div class="btn-file-choose">
+            <input type="file" id="file-input" style="display: none;">
+            <button id="choose-file-btn"><img src="#" alt="картинка файла"> Файл</button>
+        </div>
+
+        <button type="submit">Опубликовать</button>
+    </form>
+
+    <div class="post">
+        <div class="post-content">
+          <img src="#" class="avatar" alt="Аватар">
+          <div class="post-details">
+            <div class="post-user">
+              <h3 class="username">Имя пользователя</h3>
+              <p class="post-time">18:39 18.11.2023</p>
+            </div>
+            <p class="post-text">Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!</p>
+            <div class="post-actions">
+              <button class="like-btn"><img src="#" alt="like-picture"> Нравится</button>
+              <button class="comment-btn"><img src="#" alt="comm-picture"> Комментарий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+</body>
+</html>
