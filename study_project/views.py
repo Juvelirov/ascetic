@@ -6,18 +6,40 @@ from .forms import SignUpForm, ClassForm, PersonForm
 from .models import Class, Person
 
 
+def choose_group(request):
+    groups = Group.objects.all()
+
+    if request.method == 'POST':
+        group_id = request.POST.get('group')
+        group = Group.objects.get(id=group_id)
+        request.session['group'] = group.name
+        return redirect('register')
+
+    return render(request, 'groups.html', {'groups': groups})
+
+
 def registration(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
+            name = form.cleaned_data['name']
+            surname = form.cleaned_data['surname']
+            image = form.cleaned_data['image']
             password = form.cleaned_data['password1']
             email = form.cleaned_data['email']
-            user = User.objects.create_user(username=username, password=password, email=email)
-            groups = form.cleaned_data['group']
-            for group_name in groups:
-                group = Group.objects.get(name=group_name)
-                group.user_set.add(user)
+            user = User.objects.create_user(username=username,
+                                            password=password,
+                                            email=email)
+            Person.objects.update(name=name,
+                                  surname=surname,
+                                  image=image)
+            group = Group.objects.get(name=request.session.get('group'))
+            group.user_set.add(user)
+            # groups = form.cleaned_data['group']
+            # for group_name in groups:
+            #     group = Group.objects.get(name=group_name)
+            #     group.user_set.add(user)
             user.save()
             if user is not None:
                 login(request, user)
@@ -25,7 +47,7 @@ def registration(request):
             return redirect('login')
     else:
         form = SignUpForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'study_project/register-page.html', {'form': form})
 
 
 def user_login(request):
