@@ -8,14 +8,13 @@ from .models import Class, Person
 
 def choose_group(request):
     groups = Group.objects.all()
-
     if request.method == 'POST':
         group_id = request.POST.get('group')
         group = Group.objects.get(id=group_id)
         request.session['group'] = group.name
-        return redirect('register')
+        return redirect('pages')
 
-    return render(request, 'groups.html', {'groups': groups})
+    return render(request, 'study_project/home-page.html', {'groups': groups})
 
 
 def registration(request):
@@ -43,7 +42,7 @@ def registration(request):
             user.save()
             if user is not None:
                 login(request, user)
-                return redirect('edit_profile')
+                return redirect('class')
             return redirect('login')
     else:
         form = SignUpForm()
@@ -62,12 +61,18 @@ def user_login(request):
             else:
                 login(request, user)
                 return redirect('home', request.user.person.school_class.id)
-    return render(request, 'login.html')
+    return render(request, 'study_project/authorization-page.html')
 
 
 def user_logout(request):
     logout(request)
     return redirect('login')
+
+
+def pages_view(request):
+    if request.session.get('group') == 'Student' or request.session.get('group') == 'Parent':
+        return render(request, 'study_project/school-page.html')
+    return render(request, 'study_project/teacher-page.html')
 
 
 @login_required(login_url='login')

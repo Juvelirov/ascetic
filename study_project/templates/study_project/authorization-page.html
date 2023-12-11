@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/authorization.css' %}">
+    <title>Authorization-Page</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/logo.svg' %}" alt="logo" class="logo">
+        <div class="border"></div>
+    </header>
+    <h1 class="authorization-text">Войдите в вашу учётную запись</h1>
+    <div class="authorization-form">
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <label class="login-label" for="login">Логин</label>
+            <input class="login-field" type="text" id="username" name="username" required>
+        
+            <label class="password-label" for="password">Пароль</label>
+            <input class="password-field" type="password" id="password1" name="password1" required>
+        
+            <input class="botem" type="submit" value="Войти">
+        </form>
+    </div>             
+</body>
+</html>

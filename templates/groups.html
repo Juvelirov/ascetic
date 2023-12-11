@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Group</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+{#        <label for="group">Group:</label>#}
+{#        <select name="group" id="group">#}
+            {% for group in groups %}
+{#                <option value="{{ group.id }}">{{ group.name }}</option>#}
+                <input value="{{ group.id }}" id="group" name="group" type="submit">
+            {% endfor %}
+{#        </select>#}
+        <br><br>
+{#        <input type="submit" value="Select">#}
+    </form>
+</body>
+</html>
