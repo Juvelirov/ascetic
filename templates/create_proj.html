@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form method="post"> <!-- создаем форму -->
+    <form method="post" enctype="multipart/form-data"> <!-- создаем форму -->
         {% csrf_token %} <!-- защита от CSRF-атак -->
         {{ form.as_p }} <!-- выводим поля формы в виде параграфов -->
         <input type="submit" value="Save"> <!-- кнопка для сохранения изменений -->

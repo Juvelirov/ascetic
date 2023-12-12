@@ -8,7 +8,8 @@ class ProjectForm(forms.ModelForm):
         fields = ('title', 'description', 'image')
         labels = {
             'title': 'Название',
-            'description': 'Описание'
+            'description': 'Описание',
+            'image': 'Превью'
         }
 
     def __init__(self, *args, **kwargs):

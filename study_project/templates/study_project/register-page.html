@@ -18,7 +18,7 @@
         Зарегистрируйтесь прямо сейчас!
     </h1>
     <div class="register-form">
-        <form action="{% url 'register' %}" method="POST">
+        <form action="{% url 'register' %}" method="POST" enctype="multipart/form-data">
             {% csrf_token %}
               <div class="form-group">
                 <label class="name-label" for="name"></label>
@@ -48,10 +48,9 @@
               <div class="form-grou">
                 <label class="avatar-label" for="avatar"></label>
                 <input class="avatar-fiel" type="image" name="image" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}">
-                <input class="avatar-field" type="file" id="avatar" name="image" accept="image/*" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}" placeholder="Ваше фото" required>
+                <input class="avatar-field" type="file" id="image" name="image" accept="image/*" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}" placeholder="Ваше фото" required>
               </div>
 
-                {{ form.group }}
                 {{ form.password2 }}
 
               <input class="buton"type="submit" value="Зарегистрироваться">

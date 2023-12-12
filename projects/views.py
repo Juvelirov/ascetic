@@ -7,8 +7,8 @@ from study_project.models import Person, Class
 
 @login_required(login_url='login')
 def create_project(request):
-    profile = request.user.person
-    school_class = request.user.person.school_class
+    profile = request.user
+    school_class = request.user.school_class
 
     if request.method == 'POST':
         form = ProjectForm(request.POST, request.FILES)
@@ -17,7 +17,7 @@ def create_project(request):
             project.owner = profile
             project.school_class = school_class
             project.save()
-            return redirect('home', request.user.person.school_class.id)
+            return redirect('home', request.user.school_class.id)
     else:
         form = ProjectForm()
     return render(request, 'create_proj.html', {'form': form, 'profile': profile})
@@ -34,7 +34,8 @@ def create_project(request):
 def class_projects(request, pk):
     school_class = Class.objects.get(id=pk)
     projects = Project.objects.filter(school_class=school_class)
-    return render(request, 'home.html', {'projects': projects, 'class': school_class})
+    profile = request.user
+    return render(request, 'home.html', {'projects': projects, 'class': school_class, 'profile': profile})
 
 
 @login_required(login_url='login')
