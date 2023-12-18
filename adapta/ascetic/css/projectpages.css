@@ -1,0 +1,483 @@
+.bady{
+    margin: 0;
+}
+
+.header-logo {
+    display: flex;
+    width: 122px;
+    height: 122px;
+    left: 120px;
+    top: 30px;
+    background: #FFFFFF;  
+    margin-left:120px;  
+}
+.logo{
+    width: 263px;
+    height: 37px;
+    margin-top: 43px;
+    margin-left: 20px;
+    margin-right: 400px;
+}
+
+.nav-list{
+    display: flex;
+     flex-wrap: wrap;
+     margin-right: 40px;
+     list-style: none;
+     max-width: 940px;
+     position: absolute;
+    list-style-type: none;
+    margin-top: 55px;
+    margin-right: 20px;
+   }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 20px;  
+    color: #000000;
+}
+li {
+    display: inline;
+    padding: 0 30px;
+    margin-right: 20px;
+}
+
+.nav-ite{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 49px;
+    background: #1DB7AE;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 182px;
+    border: 2px solid #7B4628;
+}
+
+.header{
+    margin-bottom: 199px;
+}
+
+.post-container{
+    width:1396px;
+    height: 1206px;
+    margin-left: 262px;
+    border-radius: 30px; 
+    border: 7px #D9D9D9 solid;
+}
+
+.user-info{
+    margin-top: 31px;
+    margin-bottom: 104px;
+    margin-left: 212px;
+}
+
+.name{
+    display: flex;
+    margin-left: 130px;
+    margin-top: -100px;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 32px;
+    word-wrap: break-word
+}
+
+.data{
+    margin-left: 690px;
+    margin-top: -70px;
+    color: #BBB9B9;
+    font-size: 32px;
+    word-wrap: break-word
+}
+
+.post-content{
+    width: 900px;
+    margin-left: 215px;
+    border-radius: 30px; 
+    border: 7px #D9D9D9 solid;
+    margin-bottom: 20px;
+}
+
+.kartinka{
+    width: 900px;
+    margin-left: 215px;
+    margin-top: 200;
+    border: 7px #D9D9D9 solid;
+    margin-bottom: 20px;
+}
+
+
+.post-actions{
+    margin-left: 215px;
+}
+
+.border2{
+    width: 900px; 
+    margin-left:215px ;
+    border: 3px #BBB9B9 solid;
+    margin-bottom: 20px;
+}
+
+
+button{
+    border-radius: 30px; 
+    border: 3px #D9D9D9 solid;
+}
+.like-button{
+    padding: 13px;
+    padding-right: 30px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 24px;
+    word-wrap: break-word;
+    margin-right:50px;
+}
+
+.comment-button{
+    padding: 13px;
+    padding-right: 30px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 24px;
+    word-wrap: break-word;
+    margin-right:50px;
+}
+
+.ser{
+    margin-right:10px ;
+}
+
+@media (max-width: 1600px) {
+    .bady{
+        margin: 0;
+    }
+    
+    .header-logo {
+        display: flex;
+        width: 122px;
+        height: 122px;
+        top: 30px;
+        background: #FFFFFF;  
+        margin-left:120px;  
+    }
+    .logo{
+        width: 263px;
+        height: 37px;
+        margin-top: 43px;
+        margin-left: 20px;
+        margin-right: 200px;
+    }
+    
+    .nav-list{
+        display: flex;
+         flex-wrap: wrap;
+         margin-right: 40px;
+         list-style: none;
+         max-width: 940px;
+         position: absolute;
+        list-style-type: none;
+        margin-top: 55px;
+        margin-right: 20px;
+       }
+    
+      .nav-link {
+        text-decoration: none;
+        font-size: 20px;  
+        color: #000000;
+    }
+    li {
+        display: inline;
+        padding: 0 30px;
+        margin-right: 20px;
+    }
+    
+    .nav-ite{
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 263px;
+        height: 49px;
+        background: #1DB7AE;
+        border-radius: 30px;
+        margin-top: -10px;
+    }
+    
+    .border{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 182px;
+        border: 2px solid #7B4628;
+    }
+    
+    .header{
+        margin-bottom: 99px;
+    }
+    
+    .post-container{
+        width:1396px;
+        height: 1206px;
+        margin-left: 22px;
+        border-radius: 30px; 
+        border: 7px #D9D9D9 solid;
+    }
+    
+    .user-info{
+        margin-top: 31px;
+        margin-bottom: 104px;
+        margin-left: 212px;
+    }
+    
+    .name{
+        display: flex;
+        margin-left: 130px;
+        margin-top: -100px;
+    }
+    
+    h3{
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 32px;
+        word-wrap: break-word
+    }
+    
+    .data{
+        margin-left: 690px;
+        margin-top: -70px;
+        color: #BBB9B9;
+        font-size: 32px;
+        word-wrap: break-word
+    }
+    
+    .post-content{
+        width: 900px;
+        margin-left: 215px;
+        border-radius: 30px; 
+        border: 7px #D9D9D9 solid;
+        margin-bottom: 20px;
+    }
+    
+    .kartinka{
+        width: 900px;
+        margin-left: 215px;
+        margin-top: 200;
+        border: 7px #D9D9D9 solid;
+        margin-bottom: 20px;
+    }
+    
+    
+    .post-actions{
+        margin-left: 215px;
+    }
+    
+    .border2{
+        width: 900px; 
+        margin-left:215px ;
+        border: 3px #BBB9B9 solid;
+        margin-bottom: 20px;
+    }
+    
+    
+    button{
+        border-radius: 30px; 
+        border: 3px #D9D9D9 solid;
+    }
+    .like-button{
+        padding: 13px;
+        padding-right: 30px;
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 24px;
+        word-wrap: break-word;
+        margin-right:50px;
+    }
+    
+    .comment-button{
+        padding: 13px;
+        padding-right: 30px;
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 24px;
+        word-wrap: break-word;
+        margin-right:50px;
+    }
+    
+    .ser{
+        margin-right:10px ;
+    }
+    
+
+}
+
+
+@media (max-width: 768px){
+    .header-logo {
+        display: flex;
+        width: 122px;
+        height: 122px;
+        background: #FFFFFF;  
+        margin-left:0;  
+    }
+    .logo{
+        width: 263px;
+        height: 37px;
+        margin-top: 43px;
+        margin-left: 0;
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 40px;
+        list-style: none;
+        list-style-type: none;
+        margin-top: 55px;
+        margin-right: 20px;
+       }
+    
+      .nav-link {
+        text-decoration: none;
+        font-size: 20px;  
+        color: #000000;
+    }
+    li {
+        padding: 0 30px;
+        margin-right: 20px;
+    }
+
+    .border {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 182px;
+        border: 2px solid #7B4628;
+    }
+
+    .header{
+        margin-bottom: 99px;
+    }
+    
+    .post-container{
+        width:400px;
+        height: 1206px;
+        margin-left: 12px;
+        border-radius: 30px; 
+        border: 7px #D9D9D9 solid;
+    }
+    
+    .user-info{
+        margin-top: 31px;
+        margin-bottom: 90px;
+        margin-left: 20px;
+    }
+    
+    .name{
+        display: flex;
+        margin-left: 130px;
+        margin-top: -100px;
+    }
+    
+    h3{
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 22px;
+        word-wrap: break-word
+    }
+    
+    .data{
+        margin-left:0px;
+        margin-top: 80px;
+        color: #BBB9B9;
+        font-size: 32px;
+        word-wrap: break-word
+    }
+    
+    .post-content{
+        width: 380px;
+        margin-left: 5px;
+        border-radius: 30px; 
+        border: 7px #D9D9D9 solid;
+        margin-bottom: 20px;
+    }
+    
+    .kartinka{
+        width: 380px;
+        margin-left: 5px;
+        margin-top: 200;
+        border: 7px #D9D9D9 solid;
+        margin-bottom: 20px;
+    }
+    
+    
+    .post-actions{
+        margin-left: 215px;
+    }
+    
+    .border2{
+        width: 390px; 
+        margin-left:5px ;
+        border: 3px #BBB9B9 solid;
+        margin-bottom: 20px;
+    }
+    
+    
+    button{
+        border-radius: 30px; 
+        border: 3px #D9D9D9 solid;
+    }
+    .like-button{
+        padding: 10px;
+        padding-right: 25px;
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 24px;
+        word-wrap: break-word;
+        margin-right:50px;
+        margin-left: -110px;
+    }
+    
+    .comment-button{
+        padding: 10px;
+        padding-right: 25px;
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 24px;
+        word-wrap: break-word;
+        margin-right:50px;
+        margin-left: -110px;
+    }
+    
+    .ser{
+        margin-right:10px ;
+    }
+    
+    .header-logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px; /* изменяем отступ слева */
+      }
+      .logo {
+        width: 150px; /* уменьшаем ширину логотипа */
+        height: auto; /* автоматически высчитываем высоту */
+        margin-top: 20px; /* уменьшаем отступ сверху */
+        margin-right: 0; /* убираем отступ справа */
+      }
+      .nav-list {
+        position: static; /* убираем абсолютное позиционирование */
+        margin-top: 10px; /* уменьшаем отступ сверху */
+        margin-right: 0; /* убираем отступ справа */
+        width: 100%; /* занимаем всю ширину экрана */
+      }
+      li {
+        display: block; /* меняем на блочное отображение */
+        margin: 10px 0; /* добавляем отступы сверху и снизу */
+        padding: 0 5px; /* убираем внутренние отступы */
+        text-align: left; /* выравниваем по центру */
+      }
+      .header-line{
+        display: block;
+      }
+}

@@ -1,0 +1,205 @@
+.bady{
+    margin: 0;
+}
+
+.header-logo {
+    display: flex;
+    width: 122px;
+    height: 122px;
+    left: 120px;
+    top: 30px;
+    background: #FFFFFF;  
+    margin-left:120px;  
+}
+.logo{
+    width: 263px;
+    height: 37px;
+    margin-top: 43px;
+    margin-left: 20px;
+    margin-right: 400px;
+}
+
+.nav-list{
+    display: flex;
+     flex-wrap: wrap;
+     margin-right: 40px;
+     list-style: none;
+     max-width: 940px;
+     position: absolute;
+    list-style-type: none;
+    margin-top: 55px;
+    margin-right: 20px;
+   }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 20px;  
+    color: #000000;
+}
+li {
+    display: inline;
+    padding: 0 30px;
+    margin-right: 20px;
+}
+
+.nav-ite{
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 49px;
+    background: #1DB7AE;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 182px;
+    border: 2px solid #7B4628;
+}
+
+.header{
+    margin-bottom: 199px;
+}
+
+.loadpost{
+    width:1054px;
+    height: 350px;
+    margin-left: 433px;
+    border-radius: 30px; 
+    border: 7px #D9D9D9 solid;
+    margin-bottom: 31px;
+}
+
+.post{
+    width:1054px;
+    height: 498px;
+    margin-left: 433px;
+    border-radius: 30px; 
+    border: 7px #D9D9D9 solid;
+}
+
+label{
+    position: absolute;
+    margin-top: 55px;
+    color: #1DB7AE;
+    font-size: 32px;
+    word-wrap: break-word;
+}
+
+.avataris, .avatar{
+    margin-top: 31px;
+    margin-left: 31px;
+}
+
+textarea{
+    margin-left: 31px;
+    width: 972px;
+}
+button {
+    border: none;
+    background: none;}
+
+.btn-img-video-choose, .btn-file-choose{
+width: 225px; 
+height: 79px; 
+border-radius: 30px; 
+border: 3px #D9D9D9 solid;}
+
+.knopka{
+    color: #1DB7AE;
+    font-size: 24px;
+    word-wrap: break-word;
+}
+.btn-img-video-choose, .btn-file-choose {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 32px;}
+
+    .btn-img-video-choose{
+        margin-top: 42px;
+    }
+
+.btn-file-choose{
+    margin-left: 302px;
+    margin-top: -82px;
+    width: 115px;
+}
+
+.knopka2{
+    width: 245px; 
+    height: 79px; 
+    background: #D9D9D9; 
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 24px;
+    word-wrap: break-word;
+    margin-left: 470px;
+    margin-top: -5px;
+}
+
+
+.username{
+    position: absolute;
+    margin-top: -125px;
+    margin-left: 180px;
+    color: #1DB7AE;
+    font-size: 32px;
+    word-wrap: break-word;
+}
+
+.post-time{
+    position: absolute;
+    margin-top: -125px;
+    margin-left: 750px;
+    color: #BBB9B9;
+    font-size: 32px;
+    font-family: Crewniverse;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.post-text{
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 34px;
+    word-wrap: break-word;
+    width: 973px;
+    height: 140px;
+    margin-left: 43px;
+}
+
+.post-text2{
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 32px;
+    word-wrap: break-word;
+    margin-top: -30px
+}
+.border2{
+    position: absolute;
+    width: 972px;
+    margin-left: 37px;
+    margin-top: -30px;
+    border: 3px #BBB9B9 solid ;
+}
+
+.like-btn, .comment-btn{
+    padding: 13px;
+    padding-right: 30px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 24px;
+    word-wrap: break-word;
+    margin-right:50px;
+    border-radius: 30px; 
+    border: 3px #D9D9D9 solid;
+}
+
+.like-btn{
+    margin-left: 32px;
+}
+
+  

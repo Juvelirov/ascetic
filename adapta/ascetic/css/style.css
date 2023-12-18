@@ -85,8 +85,8 @@ h1 {
     position: absolute;
     width: 782px;
     height: 230px;
-    left: 569px;
-    top: 228px;
+    left: 659px;
+    top: 128px;
     font-family: 'crewniverse-medium', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -99,12 +99,44 @@ h1 {
     color: #000000;
 }
 
+.dos{
+    position: absolute;
+    width: 782px;
+    height: 230px;
+    left: 620px;
+    top: 220px;
+    font-family: 'crewniverse-medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 81.6596px;
+    line-height: 67px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #000000;
+}
+
+.mir{
+    position: absolute;
+    width: 782px;
+    height: 230px;
+    left: 749px;
+    top: 328px;
+    font-size: 51.6596px;
+    line-height: 67px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #000000;
+}
+
 h2 {
     position: absolute;
     width: 870px;
     height: 129px;
     left: 655px;
-    top: 528px;
+    top: 628px;
 
     font-family: 'crewniverse-medium', sans-serif;
     font-style: normal;
@@ -115,7 +147,11 @@ h2 {
     align-items: center;
     text-align: center;
 
-    color: #000000;
+    color: #8E8D8D;
+    font-size: 30px;
+    font-family: Potta One;
+    font-weight: 400;
+    word-wrap: break-word;
 
     mix-blend-mode: normal;
 }
@@ -125,7 +161,7 @@ text {
     width: 264px;
     height: 39px;
     left: 878px;
-    top: 702px;
+    top: 802px;
 
     font-family: 'crewniverse-medium', sans-serif;
     font-style: normal;
@@ -144,7 +180,7 @@ text {
     width: 263px;
     height: 263px;
     left: 534px;
-    top: 771px;
+    top: 871px;
 }
 
 .parent {
@@ -152,7 +188,7 @@ text {
     width: 263px;
     height: 263px;
     left: 817px;
-    top: 771px;
+    top: 871px;
 
     background: #FFFFFF;
 }
@@ -162,7 +198,7 @@ text {
     width: 263px;
     height: 263px;
     left: 1100px;
-    top: 771px;
+    top:871px;
 
     background: #FFFFFF;
 }
@@ -188,7 +224,7 @@ text {
         margin-right: 40px;
         list-style: none;
         list-style-type: none;
-        margin-top: 55px;
+        margin-top: -330px;
         margin-right: 20px;
        }
     
@@ -242,10 +278,10 @@ text {
     
     
     h1 {
-        width: 240px;
+        width: 340px;
         height: 10px;
-        left: 600px;
-        top: 290px;
+        left: 590px;
+        top: 190px;
         font-size: 28px;
         line-height: 50px;
         display: flex;
@@ -253,20 +289,55 @@ text {
     
         color: #000000;
     }
+
+    .dos{
+        position: absolute;
+        width: 782px;
+        height: 230px;
+        left: 550px;
+        top: 20px;
+        font-family: 'crewniverse-medium', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41.6596px;
+        line-height: 67px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .mir{
+        width: 340px;
+        height: 10px;
+        left: 610px;
+        top: 290px;
+        font-size: 28px;
+        line-height: 50px;
+        display: flex;
+        align-items: flex-end;
+    
+        color: #000000; 
+    }
     
     h2 {
         position: absolute;
-        width: 345px;
+        width: 745px;
         height: 129px;
-        left: 560px;
-        top: 350px;
+        left: 440px;
+        top: 320px;
         font-size: 28px;
         line-height: 43px;
         display: flex;
         align-items: center;
         text-align: center;
     
-        color: #000000;
+        color: #8E8D8D;
+        font-size: 30px;
+        font-family: Potta One;
+        font-weight: 400;
+        word-wrap: break-word;
     
         mix-blend-mode: normal;
     }
@@ -276,7 +347,7 @@ text {
         width: 264px;
         height: 39px;
         left: 670px;
-        top: 550px;
+        top: 500px;
         font-weight: 1000;
         font-size: 15px;
         line-height: 22px;
@@ -292,7 +363,7 @@ text {
         width: 163px;
         height: 163px;
         left: 300px;
-        top: 630px;
+        top: 600px;
     }
     
     .parent {
@@ -300,7 +371,7 @@ text {
         width: 163px;
         height: 163px;
         left: 600px;
-        top: 630px
+        top: 600px;
     }
     
     .student {
@@ -308,7 +379,7 @@ text {
         width: 163px;
         height: 163px;
         left: 900px;
-        top: 630px
+        top: 600px;
     }
 
     .header-logo {
@@ -322,11 +393,11 @@ text {
         margin-left: 0; /* уменьшаем ширину логотипа */
         height: auto; /* автоматически высчитываем высоту */
         margin-top: 5px; /* уменьшаем отступ сверху */
-        margin-right: 0; /* убираем отступ справа */
+        margin-right: 200px; /* убираем отступ справа */
       }
       .nav-list {
         position: absolute; /* убираем абсолютное позиционирование */
-        margin-top: 50px; /* уменьшаем отступ сверху */
+        margin-top: 37px; /* уменьшаем отступ сверху */
         margin-right: 0; /* убираем отступ справа */
         width: 100%; /* занимаем всю ширину экрана */
       }
@@ -360,8 +431,7 @@ text {
     }
     
     .nav-list{
-        display: flex;
-        flex-wrap: wrap;
+        position:absolute;
         margin-right: 40px;
         list-style: none;
         list-style-type: none;
@@ -420,11 +490,29 @@ text {
     
     h1 {
         position: absolute;
-        width: 240px;
+        width: 340px;
+        height: 230px;
+        left: 70px;
+        top: -10px;
+        font-size: 28px;
+        line-height: 67px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+    
+        color: #000000;
+    }
+
+    .dos{
+        position: absolute;
+        width: 782px;
         height: 230px;
         left: 20px;
-        top: 158px;
-        font-size: 32px;
+        top: 20px;
+        font-family: 'crewniverse-medium', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 41.6596px;
         line-height: 67px;
         display: flex;
         align-items: flex-end;
@@ -433,19 +521,36 @@ text {
         color: #000000;
     }
     
+    .mir{
+        width: 340px;
+        height: 10px;
+        left: 90px;
+        top: 290px;
+        font-size: 28px;
+        line-height: 50px;
+        display: flex;
+        align-items: flex-end;
+    
+        color: #000000; 
+    }
+    
     h2 {
         position: absolute;
         width: 345px;
         height: 129px;
-        left: 0px;
-        top: 428px;
+        left: 40px;
+        top: 358px;
         font-size: 32px;
         line-height: 43px;
         display: flex;
         align-items: center;
         text-align: center;
     
-        color: #000000;
+        color: #8E8D8D;
+        font-size: 30px;
+        font-family: Potta One;
+        font-weight: 400;
+        word-wrap: break-word;
     
         mix-blend-mode: normal;
     }
@@ -454,8 +559,8 @@ text {
         position: absolute;
         width: 264px;
         height: 39px;
-        left: 80px;
-        top: 630px;
+        left: 140px;
+        top: 580px;
     
         font-family: 'crewniverse-medium', sans-serif;
         font-style: normal;
@@ -471,9 +576,9 @@ text {
     
     .teacher {
         position: absolute;
-        width: 263px;
+        width: 163px;
         height: 263px;
-        left: 25px;
+        left: 90px;
         top: 711px;
     }
     
@@ -481,7 +586,7 @@ text {
         position: absolute;
         width: 263px;
         height: 263px;
-        left: 26px;
+        left: 90px;
         top: 1020px;
     
         background: #FFFFFF;
@@ -491,7 +596,7 @@ text {
         position: absolute;
         width: 263px;
         height: 263px;
-        left: 27px;
+        left: 90px;
         top: 1330px;
     
         background: #FFFFFF;
@@ -510,10 +615,10 @@ text {
         margin-right: 0; /* убираем отступ справа */
       }
       .nav-list {
-        position: static; /* убираем абсолютное позиционирование */
-        margin-top: 10px; /* уменьшаем отступ сверху */
-        margin-right: 0; /* убираем отступ справа */
-        width: 100%; /* занимаем всю ширину экрана */
+        display: flex; /* убираем абсолютное позиционирование */
+        margin-top: 30px; /* уменьшаем отступ сверху */
+        margin-right: 0; /* убираем отступ справа */ /* занимаем всю ширину экрана */
+        width: 200px;
       }
       li {
         display: block; /* меняем на блочное отображение */
