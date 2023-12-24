@@ -83,23 +83,24 @@ def edit_profile(request):
     return render(request, 'edit_profile.html', {'form': form})
 
 
-@login_required(login_url='login')
+@login_required(login_url='home')
 def class_create(request):
     if request.method == 'POST':
-        form = ClassForm(request.POST)
+        form = ClassForm(request.POST, instance=request.user)
         if form.is_valid():
             name = form.cleaned_data['name']
-            bio = form.cleaned_data['bio']
             if request.user.has_perms(['study_project.add_class', 'study_project.change_class']):
-                school_class = Class.objects.create(name=name, bio=bio)
+                school_class = Class.objects.create(name=name)
                 school_class.save()
-                Person.objects.update(school_class=school_class)
-                return redirect('home', request.user.school_class.id)
+                Person.objects.filter(username=request.user.username).update(school_class=school_class)
+                #Person.objects.update(school_class=school_class)
+                return redirect('home', pk=school_class.id)
             else:
                 school_class = Class.objects.get(name=name)
                 school_class.save()
-                Person.objects.update(school_class=school_class)
-                return redirect('home', request.user.school_class.id)
+                Person.objects.filter(username=request.user.username).update(school_class=school_class)
+                #Person.objects.update(school_class=school_class)
+                return redirect('home', pk=school_class.id)
     else:
         form = ClassForm()
-    return render(request, 'school_class.html', {'form': form})
+    return render(request, 'study_project/findclass.html', {'form': form})

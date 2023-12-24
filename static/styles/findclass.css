@@ -1,0 +1,179 @@
+
+
+.logo{
+   margin-left: 899px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+.border{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 182px;
+    border: 2px solid #7B4628;
+}
+
+header{
+    margin-bottom: 175px;
+}
+
+ h1{
+    width: 830px;
+    height: 55px;
+    color: black;
+    font-size: 50px;
+    word-wrap: break-word;
+}
+
+.textdec{
+    margin-left: 645px;
+}
+
+
+.name-class{
+    padding: 10px 40px;
+    margin-top:20px;
+    margin-left:720px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 32px;
+    word-wrap: break-word;
+    height: 100%;
+    background: #D9D9D9;
+    border-radius: 30px
+}
+
+button{
+    margin-top: 43px;
+    margin-left: 750px;
+    width: 400px;
+    height: 125px;
+    background: #1DB7AE;
+    border-radius: 30px
+}
+
+.buton{
+    color: white;
+    font-size: 40px;
+    word-wrap: break-word
+}
+
+@media (max-width: 1600px){
+    .logo{
+        margin-left: 700px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+     }
+
+     .border{
+         position: absolute;
+         width: 100%;
+         left: 0;
+         top: 182px;
+         border: 2px solid #7B4628;
+     }
+
+     header{
+         margin-bottom: 125px;
+     }
+
+      h1{
+         width: 830px;
+         height: 55px;
+         color: black;
+         font-size: 50px;
+         word-wrap: break-word;
+     }
+
+     .textdec{
+         margin-left: 455px;
+     }
+
+
+     .name-class{
+         padding: 10px 40px;
+         margin-top:20px;
+         margin-left:520px;
+         color: rgba(0, 0, 0, 0.59);
+         font-size: 32px;
+         word-wrap: break-word;
+         height: 100%;
+         background: #D9D9D9;
+         border-radius: 30px
+     }
+
+     button{
+         margin-top: 43px;
+         margin-left: 555px;
+         width: 400px;
+         height: 125px;
+         background: #1DB7AE;
+         border-radius: 30px
+     }
+
+     .buton{
+         color: white;
+         font-size: 40px;
+         word-wrap: break-word
+     }
+}
+
+@media (max-width: 768px) {
+    .logo{
+        margin-left: 250px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+     }
+
+     .border{
+         position: absolute;
+         width: 100%;
+         left: 0;
+         top: 182px;
+         border: 2px solid #7B4628;
+     }
+
+     header{
+         margin-bottom: 100px;
+     }
+
+      h1{
+         width: 830px;
+         height: 55px;
+         color: black;
+         font-size: 40px;
+         word-wrap: break-word;
+     }
+
+     .textdec{
+         margin-left: 50px;
+     }
+
+
+     .name-class{
+         padding: 10px 40px;
+         margin-top:10px;
+         margin-left:90px;
+         color: rgba(0, 0, 0, 0.59);
+         font-size: 25px;
+         word-wrap: break-word;
+         height: 100%;
+         background: #D9D9D9;
+         border-radius: 30px
+     }
+
+     button{
+         margin-top: 43px;
+         margin-left: 130px;
+         width: 300px;
+         height: 125px;
+         background: #1DB7AE;
+         border-radius: 30px
+     }
+
+     .buton{
+         color: white;
+         font-size: 30px;
+         word-wrap: break-word
+     }
+}

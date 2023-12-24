@@ -39,7 +39,7 @@ class PersonForm(forms.ModelForm):
 class ClassForm(forms.ModelForm):
     class Meta:
         model = Class
-        fields = ('name', 'bio')
+        fields = ['name']
 
     def __init__(self, *args, **kwargs):
         super(ClassForm, self).__init__(*args, **kwargs)

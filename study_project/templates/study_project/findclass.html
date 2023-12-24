@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/findclass.css' %}">
+    <title>Find-class</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'img/logo.svg' %}" alt="logo" class="logo">
+        <div class="border"></div>
+    </header>
+    <h1 class="textdec">НАЙДИТЕ СВОЙ КЛАСС!</h1>
+    <form action="{% url 'class' %}" class="forms" id="searchForm" method="POST">
+        {% csrf_token %}
+        <input class="name-class" type="text" id="name" name="name" placeholder="Название вашего класса">
+        <button class="buton" type="submit">НАЙТИ</button>
+    </form>
+    <div>
+    </div>
+</body>

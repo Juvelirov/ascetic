@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/projectpages.css' %}">
+    <title>Project page</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <img src="{% static 'img/logo.svg' %}" alt="logo">
+                    <img class="logo" src="{% static 'img/smartBear.svg' %}" alt="logo">
+                <div class="nav-line">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой класс</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой профиль</a>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+
+    <div class="post-container">
+        <div class="user-info">
+          <img src="{{ project.owner.image.url }}" alt="User Avatar" class="avatar">
+          <h3 class="name">{{ project.owner.name }}</h3>
+          <p class="data">{{ project.created }}</p>
+        </div>
+        <div class="post-content">
+          <p>{{ project.description }}</p>
+        </div>
+        <div class="kartinka">
+            <img src="{{ project.image.url }}" alt="Картинка поста">
+          </div>
+          <div class="border2"></div>
+        <div class="post-actions">
+          <button class="like-button"><img class="ser" src="{% static 'img/serdseauto.svg' %}" alt="лайк">Нравится</button>
+          <button class="comment-button"><img class="ser" src="{% static 'img/Union.svg' %}" alt="комент">Комментарий</button>
+        </div>
+      </div>
+      
+</body>
+</html>

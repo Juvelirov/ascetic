@@ -30,16 +30,28 @@ def create_project(request):
 #     return render(request, 'all_proj.html', {'projects': projects})
 
 
-@login_required(login_url='login')
+@login_required(login_url='home')
 def class_projects(request, pk):
     school_class = Class.objects.get(id=pk)
     projects = Project.objects.filter(school_class=school_class)
     profile = request.user
-    return render(request, 'home.html', {'projects': projects, 'class': school_class, 'profile': profile})
+
+    if request.method == 'POST':
+        form = ProjectForm(request.POST, request.FILES)
+        if form.is_valid():
+            project = form.save(commit=False)
+            project.owner = profile
+            project.school_class = school_class
+            project.save()
+    else:
+        form = ProjectForm()
+
+    return render(request, 'projects/feed-post.html', {'projects': projects, 'class': school_class, 'profile': profile,
+                                                       'form': form})
 
 
-@login_required(login_url='login')
+@login_required(login_url='home')
 def single_project(request, pk):
     school_project = Project.objects.get(id=pk)
-    return render(request, 'single_proj.html', {'project': school_project})
+    return render(request, 'projects/project-page.html', {'project': school_project})
 

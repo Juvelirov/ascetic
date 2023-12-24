@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/feedpost.css' %}">
+    <title>Feed-Post</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-line">
+                <div class="header-logo">
+                    <img src="{% static 'img/logo.svg' %}" alt="logo">
+                    <img class="logo" src="{% static 'img/smartBear.svg' %}" alt="logo">
+                <div class="nav-line">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой класс</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Мой профиль</a>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="border"></div>
+    </div>
+
+    <form class="loadpost" action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            <img class="avataris" src="{{ profile.image.url }}" alt="аватар пользователя">
+            <label for="new_info">ЧТО У ВАС НОВОГО?</label>
+        </div>   
+        <div class="post_text">
+          <textarea id="new_info" name="description"></textarea>
+        </div>
+        <div class="bloc">
+            <!-- Сделать обработчик клика в JS -->
+            <div class="btn-img-video-choose">
+                <input class="foto-fiel" type="image" name="image" src="{% static 'img/photovideo.jpg' %}">
+                <input class="foto-field" type="file" id="avatar" name="image" accept="image/*" src="{% static 'img/photovideo.jpg' %}" placeholder="Ваше фото" required>
+            </div>
+            <!-- Сделать обработчик клика в JS  -->
+            <div class="btn-file-choose">
+                <input class="foto-fiel1" type="image" name="image" src="{% static 'img/fail_fail.png' %}">
+                <input class="foto-field2" id="avatar" name="image" accept="image/*" src="{% static 'img/fail_fail.png' %}" placeholder="Ваше фото" required>
+                <button class="knopka2" type="submit">Опубликовать</button>
+            </div>
+    </div>
+
+    </form>
+
+    {% for project in projects %}
+    <div class="post">
+        <div class="post-content">
+          <img src="{{ project.owner.image.url }}" class="avatar" alt="Аватар">
+          <div class="post-details">
+            <div class="post-user">
+              <h3 class="username">{{ project.owner.name }} {{ project.owner.surname }}</h3>
+                    <p class="post-time">{{ project.owner.created.time }}</p>
+            </div>
+              <a href="{% url 'project' project.id %}">
+            <p class="post-text">{{ project.description }}</p>
+              </a>
+            <div class="border2"></div>            
+            <div class="post-actions">
+              <button class="like-btn"><img src="{% static 'img/serdseauto.svg' %}" alt="like-picture"> Нравится</button>
+              <button class="comment-btn"><img src="{% static 'img/Union.svg' %}" alt="comm-picture"> Комментарий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+      
+
+{#    <script src="{% static 'js/script.js' %}"></script>#}
+</body>
+</html>
