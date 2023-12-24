@@ -83,10 +83,14 @@ li {
 
 .post{
     width:1054px;
-    height: 498px;
+    height: 100%;
     margin-left: 433px;
     border-radius: 30px;
     border: 7px #D9D9D9 solid;
+}
+
+.post-content{
+    height: 100%;
 }
 
 label{
@@ -196,7 +200,7 @@ border: 3px #D9D9D9 solid;}
 
 .username{
     position: absolute;
-    margin-top: -125px;
+    margin-top: -120px;
     margin-left: 170px;
     color: #1DB7AE;
     font-size: 32px;
@@ -219,7 +223,6 @@ border: 3px #D9D9D9 solid;}
     font-size: 34px;
     word-wrap: break-word;
     width: 973px;
-    height: 140px;
     margin-left: 43px;
 }
 
@@ -325,7 +328,7 @@ border: 3px #D9D9D9 solid;}
 
     .post{
         width:1054px;
-        height: 498px;
+        height: 100%;
         margin-left: 200px;
         border-radius: 30px;
         border: 7px #D9D9D9 solid;
@@ -436,7 +439,7 @@ border: 3px #D9D9D9 solid;}
 
     .username{
         position: absolute;
-        margin-top: -125px;
+        margin-top: -120px;
         margin-left: 180px;
         color: #1DB7AE;
         font-size: 32px;
@@ -459,7 +462,6 @@ border: 3px #D9D9D9 solid;}
         font-size: 34px;
         word-wrap: break-word;
         width: 973px;
-        height: 140px;
         margin-left: 43px;
     }
 
@@ -568,7 +570,7 @@ border: 3px #D9D9D9 solid;}
 
     .post{
         width:554px;
-        height: 498px;
+        height: 100%;
         margin-left: 0px;
         border-radius: 30px;
         border: 7px #D9D9D9 solid;
@@ -679,7 +681,7 @@ border: 3px #D9D9D9 solid;}
 
     .username{
         position: absolute;
-        margin-top: -125px;
+        margin-top: -120px;
         margin-left: 180px;
         color: #1DB7AE;
         font-size: 25px;
@@ -702,7 +704,6 @@ border: 3px #D9D9D9 solid;}
         font-size: 34px;
         word-wrap: break-word;
         width: 553px;
-        height: 150px;
         margin-left: 23px;
     }
 

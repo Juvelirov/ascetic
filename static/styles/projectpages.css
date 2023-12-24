@@ -77,7 +77,7 @@ li {
 
 .post-container{
     width:1396px;
-    height: 1206px;
+    height: 100%;
     margin-left: 262px;
     border-radius: 30px;
     border: 7px #D9D9D9 solid;
@@ -109,6 +109,11 @@ h3{
     word-wrap: break-word
 }
 
+.post-content p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .post-content{
     width: 900px;
     margin-left: 215px;
@@ -128,6 +133,7 @@ h3{
 
 .post-actions{
     margin-left: 215px;
+    margin-bottom: 20px;
 }
 
 .border2{
@@ -234,10 +240,15 @@ button{
 
     .post-container{
         width:1396px;
-        height: 1206px;
+        height: 100%;
         margin-left: 22px;
         border-radius: 30px;
         border: 7px #D9D9D9 solid;
+    }
+
+    .post-content p {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .user-info{
@@ -248,7 +259,7 @@ button{
 
     .name{
         display: flex;
-        margin-left: 130px;
+        margin-left: 170px;
         margin-top: -100px;
     }
 
@@ -268,6 +279,7 @@ button{
 
     .post-content{
         width: 900px;
+
         margin-left: 215px;
         border-radius: 30px;
         border: 7px #D9D9D9 solid;
@@ -372,6 +384,11 @@ button{
         margin-bottom: 99px;
     }
 
+    .post-content p {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .post-container{
         width:400px;
         height: 1206px;
@@ -388,16 +405,16 @@ button{
 
     .name{
         display: flex;
-        margin-left: 130px;
+        margin-left: 180px;
         margin-top: -100px;
     }
-    
+
     h3{
         color: rgba(0, 0, 0, 0.59);
         font-size: 22px;
         word-wrap: break-word
     }
-    
+
     .data{
         margin-left:0px;
         margin-top: 80px;
@@ -405,24 +422,36 @@ button{
         font-size: 32px;
         word-wrap: break-word
     }
-    
+
     .post-content{
         width: 380px;
         margin-left: 5px;
-        border-radius: 30px; 
+        border-radius: 30px;
         border: 7px #D9D9D9 solid;
         margin-bottom: 20px;
     }
-    
+
     .kartinka{
         width: 380px;
+        height: 380px;
         margin-left: 5px;
         margin-top: 200;
         border: 7px #D9D9D9 solid;
         margin-bottom: 20px;
     }
-    
-    
+
+    .kartinka{
+        width: 380px;
+        height: 380px;
+        margin-left: 5px;
+        margin-top: 200;
+        border: 7px #D9D9D9 solid;
+        margin-bottom: 20px;
+    }
+
+
+
+
     .post-actions{
         margin-left: 215px;
     }

@@ -50,8 +50,8 @@
             </div>
             <!-- Сделать обработчик клика в JS  -->
             <div class="btn-file-choose">
-                <input class="foto-fiel1" type="image" name="image" src="{% static 'img/fail_fail.png' %}">
-                <input class="foto-field2" id="avatar" name="image" accept="image/*" src="{% static 'img/fail_fail.png' %}" placeholder="Ваше фото" required>
+{#                <input class="foto-fiel1" type="image" name="image" src="{% static 'img/fail_fail.png' %}">#}
+{#                <input class="foto-field2" id="avatar" name="image" accept="image/*" src="{% static 'img/fail_fail.png' %}" placeholder="Ваше фото" required>#}
                 <button class="knopka2" type="submit">Опубликовать</button>
             </div>
     </div>
@@ -67,9 +67,11 @@
               <h3 class="username">{{ project.owner.name }} {{ project.owner.surname }}</h3>
                     <p class="post-time">{{ project.owner.created.time }}</p>
             </div>
-              <a href="{% url 'project' project.id %}">
-            <p class="post-text">{{ project.description }}</p>
-              </a>
+              <div>
+                    <a href="{% url 'project' project.id %}">
+                      <p class="post-text">{{ project.description }}</p>
+                    </a>
+              </div>
             <div class="border2"></div>            
             <div class="post-actions">
               <button class="like-btn"><img src="{% static 'img/serdseauto.svg' %}" alt="like-picture"> Нравится</button>

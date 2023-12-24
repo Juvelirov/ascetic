@@ -36,15 +36,15 @@
 
     <div class="post-container">
         <div class="user-info">
-          <img src="{{ project.owner.image.url }}" alt="User Avatar" class="avatar">
+          <img src="{{ project.owner.image.url }}" alt="User Avatar" class="usavat">
           <h3 class="name">{{ project.owner.name }}</h3>
-          <p class="data">{{ project.created }}</p>
+          <p class="data">{{ project.created.date }}</p>
         </div>
         <div class="post-content">
           <p>{{ project.description }}</p>
         </div>
-        <div class="kartinka">
-            <img src="{{ project.image.url }}" alt="Картинка поста">
+        <div>
+            <img class="kartinka" src="{{ project.image.url }}" alt="Картинка поста">
           </div>
           <div class="border2"></div>
         <div class="post-actions">
