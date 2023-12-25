@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> <!-- Контейнер для хранения всех написанных комментариев под конкретным постом-->
+        <div class="border"></div>
+        <div id="allComments">
+            <div class="comment"> <!-- Коммент от пользователя -->
+                <img src="#" class="avatar" alt="Avatar">
+                <div class="comment-content">
+                  <div class="user-info">
+                    <h3>Mishka</h3>
+                    <p>Вау! Не знал об этом, спасибо!</p>
+                  </div>
+                  <div class="comment-meta">
+                    <span class="time">1 мин назад</span>
+                  </div>
+                </div>
+            </div>   
+        </div> 
+        <div class="inputCommentaryField"> <!-- Контейнер ввода комментария -->
+            <img src="#" class="avatar-self" alt="selfAvatar">
+            <label for="newComment" name="newComment">Написать комментарий...</label>
+            <textarea id="newComment"></textarea>
+            <button><img src="img/Subtract.png" alt="Кнопка «button»"></button>
+        </div>
+    </div>	
+</body>
+</html>
