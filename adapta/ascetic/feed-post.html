@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/feedpost.css">
     <title>Feed-Post</title>
 </head>
@@ -32,39 +35,41 @@
         <div class="border"></div>
     </div>
 
-    <form class="loadpost"  action="/submit_info" method="post" enctype="multipart/form-data">
+    <form class="loadpost">
         <div>
-            <img class="avataris" src="img/avatars.svg" alt="аватар пользователя">
+            <img class="avataris" src="img/children.png" alt="аватар пользователя">
             <label for="new_info">ЧТО У ВАС НОВОГО?</label>
         </div>   
         <div class="post_text">
           <textarea id="new_info" name="new_info"></textarea>
         </div>
         <div class="bloc">
-        <!-- Сделать обработчик клика в JS -->
-        <div class="btn-img-video-choose">
-          <input type="file" id="file-input" accept="image/*, video/*" style="display: none;">
-          <button class="knopka" id="choose-img-video-btn"><img src="img/video.png" alt="картинка фото.видео"> Фото/видео</button>
-        </div>
-        <!-- Сделать обработчик клика в JS  -->
-        <div class="btn-file-choose">
-            <input type="file" id="file-input" style="display: none;">
-            <button class="knopka" id="choose-file-btn"><img src="img/failznaxhek.svg" alt="картинка файла"> Файл.</button>
+            <!-- Сделать обработчик клика в JS -->
+            <div class="btn-img-video-choose">
+                <input class="foto-fiel" type="image" name="image" src="img/foto_video.png">
+                <input class="foto-field" type="file" id="avatar" name="avatar" accept="image/*" src="img/foto_video.png" placeholder="Ваше фото" required>
+            </div>
+            <!-- Сделать обработчик клика в JS  -->
+            <div class="btn-file-choose">
+                <input class="foto-fiel1" type="image" name="image" src="img/fail_fail.png">
+                <input class="foto-field2" type="file" id="avatar" name="avatar" accept="image/*" src="img/fail_fail.png" placeholder="Ваше фото" required>>
+            </div>
             <button class="knopka2" type="submit">Опубликовать</button>
-        </div>
     </div>
 
     </form>
 
     <div class="post">
         <div class="post-content">
-          <img src="img/avatars.svg" class="avatar" alt="Аватар">
+          <img src="#" class="avatar" alt="Аватар">
           <div class="post-details">
             <div class="post-user">
               <h3 class="username">Имя пользователя</h3>
               <p class="post-time">18:39 18.11.2023</p>
             </div>
-            <p class="post-text">Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!</p>
+            <div>
+            <p class="post-text">Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал! Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!Всем привет! У меня столько нового и интересного произошло за время отсутствия! Обязательно расскажу подробности, но чуть позже, устал!</p>
+            </div>
             <div class="border2"></div>            
             <div class="post-actions">
               <button class="like-btn"><img src="img/serdseauto.svg" alt="like-picture"> Нравится</button>

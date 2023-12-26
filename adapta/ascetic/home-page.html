@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://www.dafontfree.net/embed/Y3Jld25pdmVyc2UtbWVkaXVtJmRhdGEvNjUvYy8xNjAyNTgvY3Jld25pdmVyc2VfZm9udC5vdGY" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Potta+One&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home-Page</title>
 </head>
@@ -44,17 +43,33 @@
     <h1 class="dos"> <b>ДОСТИЖЕНИЯМИ</b></h1>   
     <h1 class="mir">    СО ВСЕМ МИРОМ</h1>
     <h2>Будьте готовы к тому, чтобы стать лучшими <br> в своей области с помощью <br> "Умного Мишки"!</h2>
-    <text>НАЧАТЬ КАК...</text>
+    <text><b>НАЧАТЬ КАК...</b></text>
 </section>
 
 <div class="teacher">
-    <a href="#" class="teacher-link"><img src="img/director.svg"></a>
+    <input class="av-fiel" style="width: 263px;
+    height: 263px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent url(../img/parent.svg) no-repeat center top; color: transparent;" type="submit" value="{{ group.id }}" name="group" id="group" class="teacher-link">
 </div>
 <div class="parent">
-    <a href="#" class="parent-link"><img src="img/parent.svg"></a>
+    <input type="submit" style="width: 263px;
+    height: 263px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent url(../img/student.svg) no-repeat center top; color: transparent;" src="{% static 'img/parent.svg' %}" value="{{ group.id }}" name="group" id="group" class="parent-link">
 </div>
 <div class="student">
-    <a href="#" class="student-link"><img src="img/student.svg"></a>
+    <input type="submit" style="width: 263px;
+    height: 263px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent url(../img/director.svg) no-repeat center top; color: transparent;" src="{% static 'img/student.svg' %}" value="{{ group.id }}" name="group" id="group" class="student-link">
 </div>
 </body>
 </html>
+

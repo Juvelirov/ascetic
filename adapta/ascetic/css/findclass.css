@@ -24,14 +24,17 @@ header{
     color: black;
     font-size: 50px;
     word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 }
 
 .textdec{
-    margin-left: 645px;
+    margin-left: 695px;
 }
 
 
 .name-class{
+    width: 380px;
     padding: 10px 40px;
     margin-top:20px;
     margin-left:720px;
@@ -40,7 +43,9 @@ header{
     word-wrap: break-word; 
     height: 100%; 
     background: #D9D9D9; 
-    border-radius: 30px 
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif; 
 }
 
 button{
@@ -49,13 +54,19 @@ button{
     width: 400px;
     height: 125px;
     background: #1DB7AE;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .buton{
     color: white;
     font-size: 40px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif; 
+}
+
+.buton:hover{
+    opacity: 0.7;
 }
 
 @media (max-width: 1600px){
@@ -93,7 +104,7 @@ button{
      .name-class{
          padding: 10px 40px;
          margin-top:20px;
-         margin-left:520px;
+         margin-left:500px;
          color: rgba(0, 0, 0, 0.59);
          font-size: 32px;
          word-wrap: break-word; 
@@ -104,7 +115,7 @@ button{
      
      button{
          margin-top: 43px;
-         margin-left: 555px;
+         margin-left: 530px;
          width: 400px;
          height: 125px;
          background: #1DB7AE;
@@ -146,14 +157,14 @@ button{
      }
      
      .textdec{
-         margin-left: 50px;
+         margin-left: 70px;
      }
      
      
      .name-class{
          padding: 10px 40px;
          margin-top:10px;
-         margin-left:90px;
+         margin-left:70px;
          color: rgba(0, 0, 0, 0.59);
          font-size: 25px;
          word-wrap: break-word; 
