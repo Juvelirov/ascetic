@@ -286,6 +286,14 @@ border: 3px #D9D9D9 solid;}
     margin-left: 32px;
 }
 
+.like-btn:hover{
+    opacity: 0.7;
+}
+
+.comment-btn:hover{
+    opacity: 0.7;
+}
+
 @media (max-width: 1600px){
     .bady{
         margin: 0;
