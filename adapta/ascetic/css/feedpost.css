@@ -294,6 +294,11 @@ border: 3px #D9D9D9 solid;}
     opacity: 0.7;
 }
 
+.like-img{
+    width: 30px;
+    height: 30px;
+}
+
 @media (max-width: 1600px){
     .bady{
         margin: 0;

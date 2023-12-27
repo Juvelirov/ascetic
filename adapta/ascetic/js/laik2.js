@@ -7,8 +7,8 @@ function likePost() {
     likeCount=""; // уменьшаем количество лайков на 1
     likeBtn.classList.remove("liked"); // убираем класс "liked"
     likeImg.src = "img/serdseauto.svg"; // меняем картинку на серую
-    likeImg.width = 60;
-    likeImg.height = 60;
+    likeImg.width = 30;
+    likeImg.height = 30;
     } else { // если кнопка еще не была нажата
     likeCount = 1; // увеличиваем количество лайков на 1
     likeBtn.classList.add("liked"); // добавляем класс "liked"
