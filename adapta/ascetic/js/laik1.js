@@ -1,19 +1,18 @@
-let likeCoun = 0;
+let postLiked = false;
+let postLikeCount = 0;
+
 function likePost() {
-    var likeBtn = document.getElementById("post-like-btn"); // получаем кнопку "Нравится"
-    var likeCount = parseInt(likeBtn.dataset.likes); // получаем текущее количество лайков из атрибута data-likes
-    var likeImg = likeBtn.querySelector(".like-img"); // получаем картинку лайка
-    if (likeBtn.classList.contains("liked")) { // если кнопка уже была нажата
-    likeCount=""; // уменьшаем количество лайков на 1
-    likeBtn.classList.remove("liked"); // убираем класс "liked"
-    likeImg.src = "img/serdseauto.svg"; // меняем картинку на серую
-    likeImg.width = 60;
-    likeImg.height = 60;
-    } else { // если кнопка еще не была нажата
-    likeCount = 1; // увеличиваем количество лайков на 1
-    likeBtn.classList.add("liked"); // добавляем класс "liked"
-    likeImg.src = "img/serdseauto1.png"; // меняем картинку на красную
-    }
-    likeBtn.dataset.likes = likeCount; // обновляем атрибут data-likes
-    likeBtn.querySelector(".like-text").innerText = likeCount + " Нравится"; // обновляем текст на кнопке
-    }
+if (!postLiked) {
+postLikeCount++;
+document.getElementById("post-like-count").innerHTML = postLikeCount;
+document.getElementById("post-like-btn").classList.add("liked");
+document.getElementById("like-img").src = "img/serdseauto1.png"; // меняем фотографию на заполненное сердце
+postLiked = true;
+} else {
+postLikeCount--;
+document.getElementById("post-like-count").innerHTML = postLikeCount;
+document.getElementById("post-like-btn").classList.remove("liked");
+document.getElementById("like-img").src = "img/serdseauto.svg"; // меняем фотографию на пустое сердце
+postLiked = false;
+}
+}
