@@ -82,7 +82,11 @@
                     <span class="like-text">Нравится</span>
                     <span class="like-count" id="post-like-count">0</span>
                     </button>
-              <button class="comment-btn"><img src="{% static 'img/Union.svg' %}" alt="comm-picture"> Комментарий</button>
+              <button class="comment-btn">
+                  <a href="{% url 'comments' %}">
+                      <img src="{% static 'img/Union.svg' %}" alt="comm-picture"> Комментарий
+                  </a>
+              </button>
             </div>
           </div>
         </div>

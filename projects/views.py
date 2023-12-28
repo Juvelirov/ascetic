@@ -55,3 +55,9 @@ def single_project(request, pk):
     school_project = Project.objects.get(id=pk)
     return render(request, 'projects/project-page.html', {'project': school_project})
 
+
+@login_required(login_url='login')
+def comments(request):
+    profile = request.user
+    return render(request, 'projects/commentary.html', {'profile': profile})
+

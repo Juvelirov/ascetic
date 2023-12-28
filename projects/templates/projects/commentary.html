@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'styles/comment.css' %}">
+        <title>Document</title>
+    </head>
+<body>
+    <h2></h2>
+    <div class="comment">
+        <img src="{% static 'img/avatars.svg' %}" alt="Аватар пользователя" class="avatar">
+        <div class="comment-content">
+            <div class="user-info">
+                <h3>Имя пользователя</h3>
+                <span>23.12.2023</span>
+            </div>
+            <p class="comment-text"> вау! не знал об этом, спасибо!</p>
+        </div>
+    </div>
+
+    <div class="inputCommentaryField">
+        <img src="{% static 'img/avatars.svg' %}" alt="Аватар пользователя" class="avatar-self">
+        <div class="help"><input type="text" id="newComment" placeholder="   Напишите Комментарий" class="com" ></div>
+        <button><img src="{% static 'img/Subtract.png' %}" alt="Отправить"></button>
+    </div>
+</body>
+    <script src="{% static 'js/com.js' %}"></script>
+</html>
