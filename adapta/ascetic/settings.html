@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/settings.css">
+    <title>Профиль</title>
+</head>
+<body>
+    <div class="fulMenu">
+
+    <div class="window"> <!-- Всё окно целиком-->
+        <div class="menu"> <!-- Меню сверху. Тут заголовок "Настройки уч записи" и крестик-->
+            <h2 class="menu-title">
+                НАСТРОЙКИ УЧЁТНОЙ ЗАПИСИ
+            </h2>
+            <button class="close-form">
+                <img src="img/krest.svg" alt="Крестик">
+            </button>
+        </div> 
+
+        <div class="border"></div> 
+
+        <div class="bloc">
+        <div class="Menu1"> <!-- Контейнер для разделов слева (Профиль, Безопасность)-->
+            <button class="profile" type="button" > 
+                <h2 class="profname">ПРОФИЛЬ</h2>
+            </button>
+            <button class="security" type="button"> 
+                <h2 class="profname2">
+                    БЕЗОПАСНОСТЬ
+                </h2>
+            </button>
+        </div>
+
+        <div class="main"> <!-- Основная часть окна с изменением данных -->
+            <div class="image-container"> <!-- Крч по задумке это просто картинка - кнопка, при нажатии на картинку происходит запрос на загрузку только img файлов -->
+                <img src="img/avatars.svg" alt="Добавить фото" id="image" class="imgavatar">
+                <div class="border"></div> 
+                <div class="knopka">
+                <input class="foto-fiel" type="image" name="image" src="img/dobavitfotostil.png">
+                <input class="foto-field" type="file" id="avatar" name="avatar" accept="image/*" src="img/dobavitfotostil.png" placeholder="Ваше фото" required>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input-name">
+                    <label for="name"><b>ИМЯ</b></label>
+                    <input type="text" id="name" name="name" class="name-input"  placeholder="Имя пользователя">
+                </div>
+                <div class="input-surname">
+                    <label for="surname"><b>ФАМИЛИЯ</b></label>
+                    <input type="text" id="surname" name="name" class="surname-input"  placeholder="Фамилия пользователя">
+                </div>
+                <div class="border border2"></div>
+            </div>
+            <div class="buttons-snizu">  <!-- Кнопки внизу формы -->
+                <div class="border-snizu"></div>
+                <button class="otmena" type="button">Отменить</button>
+                <button class="save" type="button">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

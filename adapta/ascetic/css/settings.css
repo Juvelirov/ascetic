@@ -1,0 +1,615 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+.fulMenu{
+    margin-top: 248px;
+    margin-left: 262px;
+    border-radius: 30px;
+    border: 7px #D9D9D9 solid;
+    width: 1396px;
+    height: 1206px;
+}
+
+.menu-title{
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 32px;
+    margin-left: 63px;
+    margin-top: 67px;
+    margin-right: 691px;
+}
+
+.menu{
+    display: flex;
+    margin-bottom: 20px;
+}
+.border{
+    width: 100%;
+    left: 0;
+    top:52px;
+    border: 3px #D9D9D9 solid;
+
+}
+
+.close-form{
+    width: 35px;
+    height: 35px;
+    margin-top: 66px;
+    padding: 2px;
+}
+
+.Menu1{
+    width: 423px;
+    height: 1043px;
+    border: 7px #D9D9D9 solid;
+    background-color: #D9D9D9;
+
+}
+
+.bloc{
+    display: flex;
+}
+
+.profile, .security{
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;  
+}
+
+.profile, .security{
+    width: 421px;
+    height: 82px;
+    color: rgba(0, 0, 0, 0.59);
+    font-size: 25px;  
+}
+
+.profile:hover{
+    background-color: white;
+}
+
+.security:hover{
+    background-color: white;
+}
+
+.profname2{
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.profname{
+    margin-left: -150px;
+    margin-top: 20px;
+}
+
+.image-container{
+    margin-top: 125px;
+    margin-left: 357px;
+    border-radius: 30px;
+    border: 7px #D9D9D9 solid;
+    width: 259px;
+    height: 314px;
+    margin-bottom: 57px;
+}
+
+.imgavatar{
+    width: 194px;
+    height: 194px;
+    padding-left: 33px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.foto-field {
+    box-sizing: border-box;
+    position: absolute;
+    width: 166px;
+    height: 54px;
+    border-radius: 30px;
+    margin-left: 50px;
+    opacity: 0;
+    
+}
+.foto-fiel{
+    box-sizing: border-box;
+    position: absolute;
+    width: 166px;
+    height: 54px;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.knopka:hover{
+    opacity: 0.7;
+}
+
+.input-name{
+    margin-bottom: 32px;
+}
+
+.input-name label{
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 161px;
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 30px;
+}
+
+.name-input{
+    margin-left: 161px;
+    border-radius: 20px; 
+    border: 3px #D9D9D9 solid;
+    width: 651px;
+    height: 63px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.input-surname label{
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 161px;
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 30px;
+}
+
+.surname-input{
+    margin-left: 161px;
+    border-radius: 20px; 
+    border: 3px #D9D9D9 solid;
+    width: 651px;
+    height: 63px;
+    font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.input-surname{
+    margin-bottom: 170px;
+}
+
+.otmena{
+    background: #D9D9D9; border-radius: 30px;
+    width: 184px;
+    height: 58px;
+    color: #595959;
+    font-size: 25px;
+    margin-right: 19px;
+    margin-left: 425px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.save{
+    background: #1DB7AE; border-radius: 30px;
+    width: 184px;
+    height: 58px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+.border-snizu{
+    margin-top: 12px;
+}
+
+@media (max-width: 1600px) {
+    body{
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif; 
+        margin: 0;
+        padding: 0;
+    }
+    
+    .fulMenu{
+        margin-top: 148px;
+        margin-left: 142px;
+        border-radius: 30px;
+        border: 7px #D9D9D9 solid;
+        width: 1196px;
+        height: 1006px;
+    }
+    
+    .menu-title{
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 29px;
+        margin-left: 63px;
+        margin-top: 67px;
+        margin-right: 651px;
+    }
+    
+    .menu{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .border{
+        width: 100%;
+        left: 0;
+        top:52px;
+        border: 3px #D9D9D9 solid;
+    
+    }
+    
+    .close-form{
+        width: 35px;
+        height: 35px;
+        margin-top: 66px;
+        padding: 2px;
+    }
+    
+    .Menu1{
+        width: 423px;
+        height: 843px;
+        border: 7px #D9D9D9 solid;
+        background-color: #D9D9D9;
+    
+    }
+    
+    .bloc{
+        display: flex;
+    }
+    
+    .profile, .security{
+        background: none;
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: none;  
+    }
+    
+    .profile, .security{
+        width: 421px;
+        height: 82px;
+        color: rgba(0, 0, 0, 0.59);
+        font-size: 25px;  
+    }
+    
+    .profile:hover{
+        background-color: white;
+    }
+    
+    .security:hover{
+        background-color: white;
+    }
+    
+    .profname2{
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+    
+    .profname{
+        margin-left: -150px;
+        margin-top: 20px;
+    }
+    
+    .image-container{
+        margin-top: 105px;
+        margin-left: 257px;
+        border-radius: 30px;
+        border: 7px #D9D9D9 solid;
+        width: 259px;
+        height: 314px;
+        margin-bottom: 57px;
+    }
+    
+    .imgavatar{
+        width: 194px;
+        height: 194px;
+        padding-left: 33px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    
+    .foto-field {
+        box-sizing: border-box;
+        position: absolute;
+        width: 166px;
+        height: 54px;
+        border-radius: 30px;
+        margin-left: 50px;
+        opacity: 0;
+        
+    }
+    .foto-fiel{
+        box-sizing: border-box;
+        position: absolute;
+        width: 166px;
+        height: 54px;
+        border-radius: 30px;
+        margin-left: 50px;
+    }
+    
+    .knopka:hover{
+        opacity: 0.7;
+    }
+    
+    .input-name{
+        margin-bottom: 25px;
+    }
+    
+    .input-name label{
+        display: block;
+        margin-bottom: 16px;
+        margin-left: 121px;
+        color: rgba(0, 0, 0, 0.40);
+        font-size: 20px;
+    }
+    
+    .name-input{
+        margin-left: 121px;
+        border-radius: 20px; 
+        border: 3px #D9D9D9 solid;
+        width: 551px;
+        height: 63px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .input-surname label{
+        display: block;
+        margin-bottom: 16px;
+        margin-left: 121px;
+        color: rgba(0, 0, 0, 0.40);
+        font-size: 25px;
+    }
+    
+    .surname-input{
+        margin-left: 121px;
+        border-radius: 20px; 
+        border: 3px #D9D9D9 solid;
+        width: 551px;
+        height: 63px;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .input-surname{
+        margin-bottom: 40px;
+    }
+    
+    .otmena{
+        background: #D9D9D9; border-radius: 30px;
+        width: 184px;
+        height: 58px;
+        color: #595959;
+        font-size: 25px;
+        margin-right: 19px;
+        margin-left: 325px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .save{
+        background: #1DB7AE; border-radius: 30px;
+        width: 184px;
+        height: 58px;
+        color: white;
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    .border-snizu{
+        margin-top: 12px;
+    }
+
+
+    @media (max-width: 768px) {
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Sofia Sans', sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        
+        .fulMenu{
+            margin-top: 0px;
+            margin-left: 0px;
+            border-radius: 30px;
+            border: 7px #D9D9D9 solid;
+            width: 476px;
+            height: 606px;
+        }
+        
+        .menu-title{
+            color: rgba(0, 0, 0, 0.59);
+            font-size: 15px;
+            margin-left: 30px;
+            margin-top: 50px;
+            margin-right: 101px;
+        }
+        
+        .menu{
+            display: flex;
+            margin-bottom: 20px;
+        }
+    
+        .border{
+            width: 100%;
+            left: 0;
+            top:52px;
+            border: 3px #D9D9D9 solid;
+        
+        }
+        
+        .close-form{
+            width: 35px;
+            height: 35px;
+            margin-top: 40px;
+            padding: 2px;
+        }
+        
+        .Menu1{
+            width: 123px;
+            height: 487px;
+            border: 7px #D9D9D9 solid;
+            background-color: #D9D9D9;
+        
+        }
+        
+        .bloc{
+            display: flex;
+        }
+        
+        .profile, .security{
+            background: none;
+            border: none;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            text-decoration: none;  
+        }
+        
+        .profile, .security{
+            width: 121px;
+            height: 32px;
+            color: rgba(0, 0, 0, 0.59);
+            font-size: 10px;
+            margin-left: 0px;  
+        }
+        
+        .profile:hover{
+            background-color: white;
+        }
+        
+        .security:hover{
+            background-color: white;
+        }
+        
+        .profname2{
+            margin-left: -5px;
+            margin-top: 5px;
+        }
+        
+        .profname{
+            margin-left: -40px;
+            margin-top: 5px;
+        }
+        
+        .image-container{
+            margin-top: 20px;
+            margin-left: 57px;
+            border-radius: 30px;
+            border: 7px #D9D9D9 solid;
+            width: 189px;
+            height: 184px;
+            margin-bottom: 27px;
+        }
+        
+        .imgavatar{
+            width: 70px;
+            height: 70px;
+            padding-left: 53px;
+            padding-top: 27px;
+            padding-bottom: 5px;
+        }
+        
+        .foto-field {
+            box-sizing: border-box;
+            position: absolute;
+            width: 166px;
+            height: 54px;
+            border-radius: 30px;
+            margin-left: 10px;
+            opacity: 0;
+            
+        }
+        .foto-fiel{
+            box-sizing: border-box;
+            position: absolute;
+            width: 166px;
+            height: 54px;
+            border-radius: 30px;
+            margin-left: 10px;
+        }
+        
+        .knopka:hover{
+            opacity: 0.7;
+        }
+        
+        .input-name{
+            margin-bottom: 15px;
+        }
+        
+        .input-name label{
+            display: block;
+            margin-bottom: 16px;
+            margin-left: 21px;
+            color: rgba(0, 0, 0, 0.40);
+            font-size: 15px;
+        }
+        
+        .name-input{
+            margin-left: 21px;
+            border-radius: 20px; 
+            border: 3px #D9D9D9 solid;
+            width: 251px;
+            height: 23px;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        
+        .input-surname label{
+            display: block;
+            margin-bottom: 16px;
+            margin-left: 21px;
+            color: rgba(0, 0, 0, 0.40);
+            font-size: 15px;
+        }
+        
+        .surname-input{
+            margin-left: 21px;
+            border-radius: 20px; 
+            border: 3px #D9D9D9 solid;
+            width: 251px;
+            height: 23px;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        
+        .input-surname{
+            margin-bottom: 20px;
+        }
+
+        .border2{
+            width: 300px;
+        }
+        
+        .otmena{
+            background: #D9D9D9; border-radius: 30px;
+            width: 124px;
+            height: 28px;
+            color: #595959;
+            font-size: 15px;
+            margin-right: 19px;
+            margin-left: 25px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        
+        .save{
+            background: #1DB7AE; border-radius: 30px;
+            width: 124px;
+            height: 28px;
+            color: white;
+            font-size: 15px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        .border-snizu{
+            margin-top: 12px;
+        }
+
+    }
+}
