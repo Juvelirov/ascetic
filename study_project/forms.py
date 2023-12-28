@@ -26,7 +26,7 @@ class SignUpForm(UserCreationForm):
 class PersonForm(forms.ModelForm):
     class Meta:
         model = Person
-        fields = ['name', 'surname']
+        fields = ['name', 'surname', 'image']
         labels = {
             'name': 'Имя',
             'surname': 'Фамилия'
@@ -34,6 +34,16 @@ class PersonForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(PersonForm, self).__init__(*args, **kwargs)
+
+
+class SecurityForm(forms.ModelForm):
+    class Meta:
+        model = Person
+        fields = ['username', 'email', 'password1']
+        labels = {
+            'username': 'Логин',
+            'email': 'Почта'
+        }
 
 
 class ClassForm(forms.ModelForm):

@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.auth import login, authenticate, logout, get_user_model
 from django.contrib.auth.models import User, Group
 from django.contrib.auth.decorators import login_required, permission_required
-from .forms import SignUpForm, ClassForm, PersonForm
+from .forms import SignUpForm, ClassForm, PersonForm, SecurityForm
 from .models import Class, Person
 
 
@@ -104,3 +104,42 @@ def class_create(request):
     else:
         form = ClassForm()
     return render(request, 'study_project/findclass.html', {'form': form})
+
+
+@login_required(login_url='home')
+def my_profile_settings(request):
+    peka = request.session.get('pk')
+    profile = request.user
+    form = PersonForm(instance=profile)
+    if request.method == 'POST':
+        form = PersonForm(request.POST, request.FILES, instance=profile)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            surname = form.cleaned_data['surname']
+            image = form.cleaned_data['image']
+            Person.objects.update(name=name,
+                                  surname=surname,
+                                  image=image)
+            form.save()
+    return render(request, 'study_project/settings.html', {'profile': profile, 'form': form, 'pk': peka})
+
+
+@login_required(login_url='home')
+def my_profile_security(request):
+    peka = request.session.get('pk')
+    profile = request.user
+    form = SecurityForm()
+    if request.method == 'POST':
+        form = SecurityForm(request.POST)
+        if form.is_valid():
+            username_upd = form.cleaned_data['username']
+            email = form.cleaned_data['email']
+            password1 = form.cleaned_data['password1']
+            user = Person.objects.get(id=profile.id)
+            user.username = username_upd
+            user.email = email
+            user.set_password(password1)
+            user.save()
+            logout(request)
+            login(request, user)
+    return render(request, 'study_project/secuity.html', {'profile': profile, 'form': form, 'pk': peka})

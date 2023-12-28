@@ -28,6 +28,7 @@ class Person(AbstractUser):
     password2 = models.CharField(max_length=50, blank=True, null=True)
     image = models.ImageField(blank=True, null=True, upload_to='profile_img', default='profile_img/avatars.svg')
     created = models.DateTimeField(auto_now_add=True)
+    id = models.AutoField(primary_key=True)
 
     #USERNAME_FIELD = 'username'
 

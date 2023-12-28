@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from .forms import ProjectForm
 from .models import Project
@@ -32,6 +32,7 @@ def create_project(request):
 
 @login_required(login_url='home')
 def class_projects(request, pk):
+    request.session['pk'] = pk
     school_class = Class.objects.get(id=pk)
     projects = Project.objects.filter(school_class=school_class)
     profile = request.user
@@ -52,8 +53,9 @@ def class_projects(request, pk):
 
 @login_required(login_url='home')
 def single_project(request, pk):
+    peka = request.session.get('pk')
     school_project = Project.objects.get(id=pk)
-    return render(request, 'projects/project-page.html', {'project': school_project})
+    return render(request, 'projects/project-page.html', {'project': school_project, 'pk': peka})
 
 
 @login_required(login_url='login')
