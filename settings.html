@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+</head>
+<body>
+    <div class="window"> <!-- Всё окно целиком-->
+        <div class="menu"> <!-- Меню сверху. Тут заголовок "Настройки уч записи" и крестик-->
+            <h2 class="menu-title">
+                Настройки учётной записи
+            </h2>
+            <button class="close-form">
+                <img src="#" alt="Крестик">
+            </button>
+            <div class="border"></div>
+        </div>  
+        <div> <!-- Контейнер для разделов слева (Профиль, Безопасность)-->
+            <button class="profile" type="button"> 
+                <h2>Профиль</h2>
+            </button>
+            <button class="security" type="button"> 
+                <h2>
+                    Безопасность
+                </h2>
+            </button>
+        </div>
+        <div class="main"> <!-- Основная часть окна с изменением данных -->
+            <div class="image-container"> <!-- Крч по задумке это просто картинка - кнопка, при нажатии на картинку происходит запрос на загрузку только img файлов -->
+                <img src="#" alt="Добавить фото" id="image">
+                <button class="upload-btn">
+                    <input type="file" accept="image/*" onchange="loadImage(event)">
+                </button>
+            </div>
+            <div class="inputs">
+                <div class="input-name">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" class="name-input"  placeholder="Имя пользователя">
+                </div>
+                <div class="input-surname">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" name="name" class="surname-input"  placeholder="Фамилия пользователя">
+                </div>
+            </div>
+        </div>
+        <div class="buttons-snizu">  <!-- Кнопки внизу формы -->
+            <div class="border-snizu"></div>
+            <button class="otmena" type="button">Отменить</button>
+            <button class="save" type="button">Сохранить</button>
+        </div>
+    </div>
+</body>
+</html>
