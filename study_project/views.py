@@ -110,17 +110,18 @@ def class_create(request):
 def my_profile_settings(request):
     peka = request.session.get('pk')
     profile = request.user
-    form = PersonForm(instance=profile)
+    form = PersonForm()
     if request.method == 'POST':
-        form = PersonForm(request.POST, request.FILES, instance=profile)
+        form = PersonForm(request.POST, request.FILES)
         if form.is_valid():
             name = form.cleaned_data['name']
             surname = form.cleaned_data['surname']
             image = form.cleaned_data['image']
-            Person.objects.update(name=name,
-                                  surname=surname,
-                                  image=image)
-            form.save()
+            user = Person.objects.get(id=profile.id)
+            user.name = name
+            user.surname = surname
+            user.image = image
+            user.save()
     return render(request, 'study_project/settings.html', {'profile': profile, 'form': form, 'pk': peka})
 
 
