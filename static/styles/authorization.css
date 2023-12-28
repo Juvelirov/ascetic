@@ -26,6 +26,8 @@ header {
     margin-right: auto;
     color: black;
     font-size: 58px;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 }
 
 h1 {
@@ -48,6 +50,8 @@ h1 {
     font-size: 32px;
     word-wrap: break-word;
     margin-left:150px;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 }
 
 .login-field, .password-field {
@@ -55,6 +59,8 @@ h1 {
     height: 60px;
     background: #D9D9D9;
     border-radius: 30px;
+    font-size: 32px;
+
 }
 
 .password-field{
@@ -72,6 +78,8 @@ h1 {
     color: white;
     font-size: 40px;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 }
 
 .botem:hover{

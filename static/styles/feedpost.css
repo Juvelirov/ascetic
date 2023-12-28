@@ -1,5 +1,7 @@
 .bady{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .header-logo {
@@ -8,8 +10,8 @@
     height: 122px;
     left: 120px;
     top: 30px;
-    background: #FFFFFF;  
-    margin-left:120px;  
+    background: #FFFFFF;
+    margin-left:120px;
 }
 .logo{
     width: 263px;
@@ -33,12 +35,18 @@
 
   .nav-link {
     text-decoration: none;
-    font-size: 30px;  
+    font-size: 30px;
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.nav-link:hover{
+    opacity: 0.7;
 }
 
 .nav-item{
-    font-size: 30px;  
+    font-size: 30px;
 }
 li {
     display: inline;
@@ -99,6 +107,8 @@ label{
     color: #1DB7AE;
     font-size: 32px;
     word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .avataris, .avatar{
@@ -118,8 +128,8 @@ label{
     width: 235px;
     height: 92px;
     opacity: 0;
-
 }
+
 .foto-fiel{
     box-sizing: border-box;
     position: absolute;
@@ -127,6 +137,14 @@ label{
     margin-top: -5px;
     width: 235px;
     height: 92px;
+}
+
+.btn-img-video-choose:hover{
+    opacity: 0.7;
+}
+
+.btn-file-choose:hover{
+    opacity: 0.7;
 }
 
 .foto-field2 {
@@ -186,6 +204,7 @@ border: 3px #D9D9D9 solid;}
 }
 
 .knopka2{
+    position: absolute;
     width: 245px;
     height: 79px;
     background: #D9D9D9;
@@ -194,17 +213,25 @@ border: 3px #D9D9D9 solid;}
     font-size: 24px;
     word-wrap: break-word;
     margin-left: 470px;
-    margin-top: -5px;
+    margin-top: -10px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.knopka2:hover{
+    opacity: 0.7;
 }
 
 
 .username{
     position: absolute;
-    margin-top: -120px;
+    margin-top: -125px;
     margin-left: 170px;
     color: #1DB7AE;
     font-size: 32px;
     word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .post-time{
@@ -213,8 +240,8 @@ border: 3px #D9D9D9 solid;}
     margin-left: 750px;
     color: #BBB9B9;
     font-size: 32px;
-    font-family: Crewniverse;
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     word-wrap: break-word
 }
 
@@ -224,6 +251,8 @@ border: 3px #D9D9D9 solid;}
     word-wrap: break-word;
     width: 973px;
     margin-left: 43px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .post-text2{
@@ -249,10 +278,25 @@ border: 3px #D9D9D9 solid;}
     margin-right:50px;
     border-radius: 30px;
     border: 3px #D9D9D9 solid;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .like-btn{
     margin-left: 32px;
+}
+
+.like-btn:hover{
+    opacity: 0.7;
+}
+
+.comment-btn:hover{
+    opacity: 0.7;
+}
+
+.like-img{
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 1600px){
@@ -425,6 +469,7 @@ border: 3px #D9D9D9 solid;}
     }
 
     .knopka2{
+        position: absolute;
         width: 245px;
         height: 79px;
         background: #D9D9D9;
@@ -433,13 +478,13 @@ border: 3px #D9D9D9 solid;}
         font-size: 24px;
         word-wrap: break-word;
         margin-left: 470px;
-        margin-top: -5px;
+        margin-top: -10px;
     }
 
 
     .username{
         position: absolute;
-        margin-top: -120px;
+        margin-top: -125px;
         margin-left: 180px;
         color: #1DB7AE;
         font-size: 32px;
@@ -452,8 +497,6 @@ border: 3px #D9D9D9 solid;}
         margin-left: 750px;
         color: #BBB9B9;
         font-size: 32px;
-        font-family: Crewniverse;
-        font-weight: 500;
         word-wrap: break-word
     }
 
@@ -667,21 +710,22 @@ border: 3px #D9D9D9 solid;}
     }
 
     .knopka2{
-        width: 245px;
+        position: absolute;
+        width: 200px;
         height: 79px;
         background: #D9D9D9;
         border-radius: 30px;
         color: rgba(0, 0, 0, 0.59);
         font-size: 24px;
         word-wrap: break-word;
-        margin-left: 160px;
-        margin-top: -5px;
+        margin-left: 150px;
+        margin-top: -10px;
     }
 
 
     .username{
         position: absolute;
-        margin-top: -120px;
+        margin-top: -125px;
         margin-left: 180px;
         color: #1DB7AE;
         font-size: 25px;
@@ -694,8 +738,6 @@ border: 3px #D9D9D9 solid;}
         margin-left: 420px;
         color: #BBB9B9;
         font-size: 15px;
-        font-family: Crewniverse;
-        font-weight: 500;
         word-wrap: break-word
     }
 

@@ -1,4 +1,7 @@
-
+body {
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+}
 
 .logo{
    margin-left: 899px;

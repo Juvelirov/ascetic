@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles/feedpost.css' %}">
     <title>Feed-Post</title>
 </head>
@@ -46,12 +49,12 @@
             <!-- Сделать обработчик клика в JS -->
             <div class="btn-img-video-choose">
                 <input class="foto-fiel" type="image" name="image" src="{% static 'img/photovideo.jpg' %}">
-                <input class="foto-field" type="file" id="avatar" name="image" accept="image/*" src="{% static 'img/photovideo.jpg' %}" placeholder="Ваше фото" required>
+                <input class="foto-field" type="file" id="avatar" name="image" accept="image/*" src="{% static 'img/photovideo.jpg' %}" placeholder="Ваше фото">
             </div>
             <!-- Сделать обработчик клика в JS  -->
             <div class="btn-file-choose">
-{#                <input class="foto-fiel1" type="image" name="image" src="{% static 'img/fail_fail.png' %}">#}
-{#                <input class="foto-field2" id="avatar" name="image" accept="image/*" src="{% static 'img/fail_fail.png' %}" placeholder="Ваше фото" required>#}
+                <input class="foto-fiel1" type="image" name="image" src="{% static 'img/fail_fail.png' %}">
+                <input class="foto-field2" id="avatar" name="image" accept="image/*" src="{% static 'img/fail_fail.png' %}" placeholder="Ваше фото">
                 <button class="knopka2" type="submit">Опубликовать</button>
             </div>
     </div>
@@ -74,15 +77,37 @@
               </div>
             <div class="border2"></div>            
             <div class="post-actions">
-              <button class="like-btn"><img src="{% static 'img/serdseauto.svg' %}" alt="like-picture"> Нравится</button>
+                <button class="like-btn" id="post-like-btn" onclick="likePost()">
+                    <img src="{% static 'img/serdseauto.svg' %}" alt="like-picture" class="like-img" id="like-img">
+                    <span class="like-text">Нравится</span>
+                    <span class="like-count" id="post-like-count">0</span>
+                    </button>
               <button class="comment-btn"><img src="{% static 'img/Union.svg' %}" alt="comm-picture"> Комментарий</button>
             </div>
           </div>
         </div>
       </div>
     {% endfor %}
-      
 
-{#    <script src="{% static 'js/script.js' %}"></script>#}
+    <script>
+        let postLiked = false;
+        let postLikeCount = 0;
+
+        function likePost() {
+        if (!postLiked) {
+        postLikeCount++;
+        document.getElementById("post-like-count").innerHTML = postLikeCount;
+        document.getElementById("post-like-btn").classList.add("liked");
+        document.getElementById("like-img").src = "{% static 'img/serdseauto1.png' %}"; // меняем фотографию на заполненное сердце
+        postLiked = true;
+        } else {
+        postLikeCount--;
+        document.getElementById("post-like-count").innerHTML = postLikeCount;
+        document.getElementById("post-like-btn").classList.remove("liked");
+        document.getElementById("like-img").src = "{% static 'img/serdseauto.svg' %}"; // меняем фотографию на пустое сердце
+        postLiked = false;
+        }
+        }
+    </script>
 </body>
 </html>

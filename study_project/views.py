@@ -51,12 +51,12 @@ def user_login(request):
         password = request.POST['password1']
         user = authenticate(request, username=username, password=password)
         if user is not None:
-            if Person.objects.filter(school_class__isnull=True):
-                login(request, user)
-                return redirect('class')
-            else:
-                login(request, user)
-                return redirect('home', request.user.school_class.id)
+            # if Person.objects.filter(school_class__isnull=True):
+            #     login(request, user)
+            #     return redirect('class')
+            # else:
+            login(request, user)
+            return redirect('home', request.user.school_class.id)
     return render(request, 'study_project/authorization-page.html')
 
 

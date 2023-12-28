@@ -8,7 +8,7 @@ class Project(models.Model):
     school_class = models.ForeignKey(Class, null=True, blank=True, on_delete=models.CASCADE)
     title = models.CharField(max_length=70, null=True, blank=True)
     description = models.CharField(max_length=1000, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True, upload_to="project_img", default="project_img/default")
+    image = models.ImageField(null=True, blank=True, upload_to="project_img", default="project_img/avatars.svg")
     created = models.DateTimeField(auto_now_add=True)
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
 

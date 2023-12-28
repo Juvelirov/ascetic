@@ -1,5 +1,7 @@
 .bady{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 }
 
 .header-logo {
@@ -8,8 +10,8 @@
     height: 122px;
     left: 120px;
     top: 30px;
-    background: #FFFFFF;  
-    margin-left:120px;  
+    background: #FFFFFF;
+    margin-left:120px;
 }
 .logo{
     width: 263px;
@@ -33,8 +35,10 @@
 
   .nav-link {
     text-decoration: none;
-    font-size: 20px;  
+    font-size: 25px;
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 li {
     display: inline;
@@ -93,6 +97,8 @@ li {
     display: flex;
     margin-left: 170px;
     margin-top: -90px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 h3{
@@ -106,12 +112,9 @@ h3{
     margin-top: -70px;
     color: #BBB9B9;
     font-size: 32px;
-    word-wrap: break-word
-}
-
-.post-content p {
-    padding-right: 20px;
-    padding-left: 20px;
+    word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .post-content{
@@ -120,6 +123,8 @@ h3{
     border-radius: 30px;
     border: 7px #D9D9D9 solid;
     margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .kartinka{
@@ -143,6 +148,9 @@ h3{
     margin-bottom: 20px;
 }
 
+.nav-link:hover{
+    opacity: 0.7;
+}
 
 button{
     border-radius: 30px;
@@ -155,6 +163,8 @@ button{
     font-size: 24px;
     word-wrap: break-word;
     margin-right:50px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .comment-button{
@@ -164,10 +174,25 @@ button{
     font-size: 24px;
     word-wrap: break-word;
     margin-right:50px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .ser{
     margin-right:10px ;
+}
+
+.like-button:hover{
+    opacity: 0.7;
+}
+
+.comment-button:hover{
+    opacity: 0.7;
+}
+
+.like-img{
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 1600px) {
@@ -244,11 +269,6 @@ button{
         margin-left: 22px;
         border-radius: 30px;
         border: 7px #D9D9D9 solid;
-    }
-
-    .post-content p {
-        padding-right: 20px;
-        padding-left: 20px;
     }
 
     .user-info{
@@ -382,11 +402,6 @@ button{
 
     .header{
         margin-bottom: 99px;
-    }
-
-    .post-content p {
-        padding-right: 20px;
-        padding-left: 20px;
     }
 
     .post-container{

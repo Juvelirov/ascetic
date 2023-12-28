@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+}
 
 .header-logo {
     display: flex;
@@ -31,9 +34,14 @@
 
   .nav-link {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: #000000;
 }
+
+.nav-link:hover{
+    opacity: 0.7;
+}
+
 li {
     display: inline;
     padding: 0 30px;
@@ -56,8 +64,6 @@ li {
     padding: 11px;
     text-align: center;
     top: 3px;
-    font-family: 'crewniverse-medium', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 22px;
@@ -85,9 +91,10 @@ h1 {
     position: absolute;
     width: 782px;
     height: 230px;
-    left: 659px;
+    left: 672px;
     top: 128px;
-    font-family: 'crewniverse-medium', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 61.6596px;
@@ -104,9 +111,9 @@ h1 {
     width: 782px;
     height: 230px;
     left: 620px;
-    top: 220px;
-    font-family: 'crewniverse-medium', sans-serif;
-    font-style: normal;
+    top: 210px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     font-weight: 500;
     font-size: 81.6596px;
     line-height: 67px;
@@ -135,11 +142,11 @@ h2 {
     position: absolute;
     width: 870px;
     height: 129px;
-    left: 655px;
+    left: 620px;
     top: 628px;
 
-    font-family: 'crewniverse-medium', sans-serif;
-    font-style: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 43px;
@@ -149,8 +156,6 @@ h2 {
 
     color: #8E8D8D;
     font-size: 30px;
-    font-family: Potta One;
-    font-weight: 400;
     word-wrap: break-word;
 
     mix-blend-mode: normal;
@@ -163,10 +168,10 @@ text {
     left: 878px;
     top: 802px;
 
-    font-family: 'crewniverse-medium', sans-serif;
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 2000;
+    font-size: 25px;
     line-height: 22px;
     display: flex;
     align-items: center;
@@ -183,6 +188,10 @@ text {
     top: 871px;
 }
 
+.teacher:hover{
+    opacity: 0.7;
+}
+
 .parent {
     position: absolute;
     width: 263px;
@@ -191,6 +200,10 @@ text {
     top: 871px;
 
     background: #FFFFFF;
+}
+
+.parent:hover{
+    opacity: 0.7;
 }
 
 .student {
@@ -203,7 +216,12 @@ text {
     background: #FFFFFF;
 }
 
+.student:hover{
+    opacity: 0.7;
+}
+
 @media (max-width: 1600px){
+
     .header-logo {
         display: flex;
         width: 122px;
@@ -229,10 +247,14 @@ text {
        }
 
       .nav-link {
-        text-decoration: none;
         font-size: 20px;
         color: #000000;
     }
+
+    .nav-link:hover{
+        opacity: 0.7;
+    }
+
     li {
         padding: 0 30px;
         margin-right: 20px;
@@ -253,8 +275,6 @@ text {
         padding: 11px;
         text-align: center;
         top: 3px;
-        font-family: 'crewniverse-medium', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 22px;
@@ -286,6 +306,8 @@ text {
         line-height: 50px;
         display: flex;
         align-items: flex-end;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 
         color: #000000;
     }
@@ -296,8 +318,8 @@ text {
         height: 230px;
         left: 550px;
         top: 20px;
-        font-family: 'crewniverse-medium', sans-serif;
-        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         font-weight: 500;
         font-size: 41.6596px;
         line-height: 67px;
@@ -317,15 +339,19 @@ text {
         line-height: 50px;
         display: flex;
         align-items: flex-end;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 
         color: #000000;
     }
+
+
 
     h2 {
         position: absolute;
         width: 745px;
         height: 129px;
-        left: 440px;
+        left: 395px;
         top: 320px;
         font-size: 28px;
         line-height: 43px;
@@ -335,8 +361,8 @@ text {
 
         color: #8E8D8D;
         font-size: 30px;
-        font-family: Potta One;
-        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         word-wrap: break-word;
 
         mix-blend-mode: normal;
@@ -346,14 +372,17 @@ text {
         position: absolute;
         width: 264px;
         height: 39px;
-        left: 670px;
+        left: 667px;
         top: 500px;
         font-weight: 1000;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 22px;
         display: flex;
         align-items: center;
         text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
+
 
         color: #000000;
     }
@@ -444,6 +473,10 @@ text {
         font-size: 20px;
         color: #000000;
     }
+
+    .nav-link:hover{
+        opacity: 0.7;
+    }
     li {
         padding: 0 30px;
         margin-right: 20px;
@@ -464,8 +497,6 @@ text {
         padding: 11px;
         text-align: center;
         top: 3px;
-        font-family: 'crewniverse-medium', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 20px;
         line-height: 22px;
@@ -499,6 +530,8 @@ text {
         display: flex;
         align-items: flex-end;
         text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 
         color: #000000;
     }
@@ -507,10 +540,10 @@ text {
         position: absolute;
         width: 782px;
         height: 230px;
-        left: 20px;
+        left: 30px;
         top: 20px;
-        font-family: 'crewniverse-medium', sans-serif;
-        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         font-weight: 500;
         font-size: 41.6596px;
         line-height: 67px;
@@ -530,6 +563,8 @@ text {
         line-height: 50px;
         display: flex;
         align-items: flex-end;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
 
         color: #000000;
     }
@@ -548,8 +583,8 @@ text {
 
         color: #8E8D8D;
         font-size: 30px;
-        font-family: Potta One;
-        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         word-wrap: break-word;
 
         mix-blend-mode: normal;
@@ -562,10 +597,10 @@ text {
         left: 140px;
         top: 580px;
 
-        font-family: 'crewniverse-medium', sans-serif;
-        font-style: normal;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         font-weight: 1000;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 22px;
         display: flex;
         align-items: center;
@@ -581,6 +616,8 @@ text {
         left: 90px;
         top: 711px;
     }
+
+
 
     .parent {
         position: absolute;
@@ -629,4 +666,4 @@ text {
       .header-line{
         display: block;
       }
-}
+    }

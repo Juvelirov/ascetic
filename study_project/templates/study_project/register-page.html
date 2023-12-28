@@ -6,6 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles/register.css' %}">
     <title>Register-Page</title>
 </head>
@@ -52,8 +55,8 @@
 
               <div class="form-grou">
                 <label class="avatar-label" for="avatar"></label>
-                <input class="avatar-fiel" type="image" name="image" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}">
-                <input class="avatar-field" type="file" id="image" name="image" accept="image/*" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}" placeholder="Ваше фото" required>
+                <input class="avatar-fiel" type="image" accept="image/*" name="image" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}">
+                <input class="avatar-field" type="file" id="image" name="image" accept="image/*" src="{% static 'img/roundedrectangle_redondeado_4073.png' %}" placeholder="Ваше фото">
               </div>
 
               <input class="buton"type="submit" value="Зарегистрироваться">

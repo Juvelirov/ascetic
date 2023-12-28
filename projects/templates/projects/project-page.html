@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sofia+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles/projectpages.css' %}">
     <title>Project page</title>
 </head>
@@ -48,10 +51,33 @@
           </div>
           <div class="border2"></div>
         <div class="post-actions">
-          <button class="like-button"><img class="ser" src="{% static 'img/serdseauto.svg' %}" alt="лайк">Нравится</button>
+            <button class="like-button" id="post-like-btn" onclick="likePost()">
+                <img src="{% static 'img/serdseauto.svg' %}" alt="like-picture" class="like-img" id="like-img">
+                <span class="like-text">Нравится</span>
+                <span class="like-count" id="post-like-count">0</span>
+                </button>
           <button class="comment-button"><img class="ser" src="{% static 'img/Union.svg' %}" alt="комент">Комментарий</button>
         </div>
       </div>
-      
+      <script>
+        let postLiked = false;
+        let postLikeCount = 0;
+
+        function likePost() {
+        if (!postLiked) {
+        postLikeCount++;
+        document.getElementById("post-like-count").innerHTML = postLikeCount;
+        document.getElementById("post-like-btn").classList.add("liked");
+        document.getElementById("like-img").src = "{% static 'img/serdseauto1.png' %}"; // меняем фотографию на заполненное сердце
+        postLiked = true;
+        } else {
+        postLikeCount--;
+        document.getElementById("post-like-count").innerHTML = postLikeCount;
+        document.getElementById("post-like-btn").classList.remove("liked");
+        document.getElementById("like-img").src = "{% static 'img/serdseauto.svg' %}"; // меняем фотографию на пустое сердце
+        postLiked = false;
+        }
+        }
+    </script>
 </body>
 </html>

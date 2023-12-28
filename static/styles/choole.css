@@ -30,9 +30,25 @@
    }
 
   .nav-link {
-    font-size: 20px;  
+    text-decoration: none;
+    font-size: 20px;
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
+
+.nav-link:hover{
+    opacity: 0.7;
+}
+
+.nav-ite:hover{
+    opacity: 0.7;
+}
+
+.btn-text-invite-school:hover{
+    opacity: 0.7;
+}
+
 li {
     display: inline;
     padding: 0 30px;
@@ -77,7 +93,7 @@ li {
 }
 
 
-.invite-school { 
+.invite-school {
     width:100%;
     height: 1080px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/childrenn.jpg);
@@ -87,7 +103,7 @@ li {
     margin-top: 55px;
 }
 
-.invite-school-btn { 
+.invite-school-btn {
     position: absolute;
     margin-left: 120px;
     margin-top: 150px;
@@ -104,10 +120,12 @@ li {
         color: white;
         font-size: 40px;
         text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 h1{
-width: 932px;    
+width: 932px;
 font-size: 64px;
 word-wrap: break-word
 }
@@ -115,15 +133,17 @@ word-wrap: break-word
 .texttt{
     margin-bottom: 170px;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
-@media (max-width: 1600px) {  
+@media (max-width: 1600px) {
     .header-logo {
         display: flex;
         width: 122px;
         height: 122px;
-        background: #FFFFFF;  
-        margin-left:0;  
+        background: #FFFFFF;
+        margin-left:0;
     }
     .logo{
         width: 263px;
@@ -131,7 +151,7 @@ word-wrap: break-word
         margin-top: 43px;
         margin-left: 0;
     }
-    
+
     .nav-list{
         display: flex;
         flex-wrap: wrap;
@@ -141,17 +161,17 @@ word-wrap: break-word
         margin-top: 55px;
         margin-right: 20px;
        }
-    
+
       .nav-link {
         text-decoration: none;
-        font-size: 20px;  
+        font-size: 20px;
         color: #000000;
     }
     li {
         padding: 0 30px;
         margin-right: 20px;
     }
-    
+
     .nav-ite{
         display: flex;
         justify-content: center;
@@ -162,7 +182,7 @@ word-wrap: break-word
         border-radius: 30px;
         margin-top: -10px;
     }
-    
+
     .btn-text {
         padding: 11px;
         text-align: center;
@@ -176,9 +196,9 @@ word-wrap: break-word
         text-decoration: none;
         color: #FFFFFF;
     }
-    
 
-    
+
+
     .border {
         position: absolute;
         width: 100%;
@@ -186,14 +206,14 @@ word-wrap: break-word
         top: 182px;
         border: 2px solid #7B4628;
     }
-    
-    
-    .invite-school-btn { 
+
+
+    .invite-school-btn {
         position: absolute;
         margin-left: 200px;
         margin-top: 130px;
     }
-    
+
     .btn-text-invite-school{
             width: 520px;
             height: 110px;
@@ -206,13 +226,13 @@ word-wrap: break-word
             font-size: 40px;
             text-decoration: none;
     }
-    
+
     h1{
-    width: 550px;    
+    width: 550px;
     font-size: 55px;
     word-wrap: break-word
     }
-    
+
     .texttt{
         margin-bottom: 160px;
         color: white;
@@ -242,19 +262,19 @@ word-wrap: break-word
         margin: 10px 0; /* добавляем отступы сверху и снизу */
         padding: 0px 40px; /* убираем внутренние отступы */
         text-align: left; /* выравниваем по центру */
-      } 
+      }
       .header-line{
         display: block;
       }
 }
 
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
     .header-logo {
         display: flex;
         width: 122px;
         height: 122px;
-        background: #FFFFFF;  
-        margin-left:0;  
+        background: #FFFFFF;
+        margin-left:0;
     }
     .logo{
         width: 263px;
@@ -262,7 +282,7 @@ word-wrap: break-word
         margin-top: 43px;
         margin-left: 0;
     }
-    
+
     .nav-list{
         display: flex;
         flex-wrap: wrap;
@@ -272,11 +292,13 @@ word-wrap: break-word
         margin-top: 55px;
         margin-right: 20px;
        }
-    
+
       .nav-link {
         text-decoration: none;
-        font-size: 20px;  
+        font-size: 20px;
         color: #000000;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
     }
     li {
         padding: 0 30px;
